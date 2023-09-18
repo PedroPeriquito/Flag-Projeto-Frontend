@@ -1,3 +1,27 @@
-.navbar{
-    height: 1rem;
+.navbar {
+	height: 4rem;
+	background-color: var(--blackColor);
+	display: flex;
+	justify-content: center;
+}
+
+.navContainer {
+	width: 100%;
+	max-width: 1024px;
+	color: var(--whiteColor);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-weight: 500;
+}
+
+.navButton {
+	margin-left: 2em;
+	border: none;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	color: var(--blackColor);
 }
