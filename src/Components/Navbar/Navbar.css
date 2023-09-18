@@ -18,10 +18,27 @@
 	font-weight: 500;
 }
 
+.navitems {
+	display: flex;
+	gap: 1em;
+}
+
 .navButton {
-	margin-left: 2em;
 	border: none;
-	padding: 0.5em 1em;
+	padding: 0em 1em;
 	cursor: pointer;
 	color: var(--blackColor);
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+.navList {
+	display: flex;
+	align-items: right;
+	justify-content: center;
+}
+
+.navItem {
+	list-style: none;
+	margin: 0 1em;
 }

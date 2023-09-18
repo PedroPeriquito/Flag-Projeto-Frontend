@@ -1,0 +1,36 @@
+.hero {
+	display: flex;
+	justify-content: center;
+}
+
+.heroContainer {
+	height: 40rem;
+	width: 100%;
+	max-width: 1024px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/DesertHero.jpg'), url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/ForestHero.jpg'),
+		url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/CanyonHero.jpg'), url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/IceHero.jpg');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: right bottom, left top, left bottom, right top;
+}
+
+.heroText {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: var(--whiteColor);
+	border-radius: 50px;
+	font-weight: 500;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+}
+
+.heroButton {
+	width: 50%;
+	cursor: pointer;
+	border-radius: 25px;
+}
