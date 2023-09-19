@@ -1,9 +1,7 @@
 import "./Contacts.css"
 
 const Contacts = () => {
-  return (
-    <div>Contacts</div>
-  )
-}
+	return <></>;
+};
 
-export default Contacts
+export default Contacts;

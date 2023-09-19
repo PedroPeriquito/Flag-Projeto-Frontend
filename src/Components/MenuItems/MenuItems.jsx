@@ -7,19 +7,19 @@ export const MenuItems = [
 	},
 	{
 		title: 'Destinations',
-		url: '/Destiantions',
+		url: '/destinations',
 		cName: 'navLinks',
 		icon: 'fa-solid fa-plane',
 	},
 	{
 		title: 'Booking',
-		url: '/Booking',
+		url: '/booking',
 		cName: 'navLinks',
 		icon: 'fa-solid fa-book',
 	},
 	{
 		title: 'Contacts',
-		url: '/Contacts',
+		url: '/contacts',
 		cName: 'navLinks',
 		icon: 'fa-solid fa-address-book',
 	},

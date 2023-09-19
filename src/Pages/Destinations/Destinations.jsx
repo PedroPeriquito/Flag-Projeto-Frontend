@@ -1,7 +1,11 @@
 import './Destinations.css';
 
 const Destinations = () => {
-	return <div>Destinations</div>;
+	return (
+		<>
+		
+		</>
+	);
 };
 
 export default Destinations;

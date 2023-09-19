@@ -5,13 +5,11 @@ import About from '../../Components/About/About';
 
 const Home = () => {
 	return (
-		<div>
-			<>
-				<Navbar />
+		<>
+			<Navbar />
 			{/* 	<Hero />
 				<About /> */}
-			</>
-		</div>
+		</>
 	);
 };
 
