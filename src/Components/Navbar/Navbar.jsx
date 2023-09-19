@@ -19,12 +19,17 @@ class Navbar extends Component {
 						return (
 							<li key={index}>
 								<a href='/' className={item.cName}>
-									<i class={item.icon}>{item.title}</i>
+									<p>
+										<i class={item.icon}></i>
+										{item.title}
+									</p>
 								</a>
 							</li>
 						);
 					})}
-					<button>Sign Up</button>
+					<div className='signUp'>
+						<button>Sign Up</button>
+					</div>
 				</ul>
 			</nav>
 		);
