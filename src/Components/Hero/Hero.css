@@ -10,8 +10,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/DesertHero.jpg'), url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/ForestHero.jpg'),
-		url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/CanyonHero.jpg'), url('C:\Users\Pedro\Desktop\Projeto-frontend\src\Assets/IceHero.jpg');
+	background-image: url('../../Assets/DesertHero.jpg'), url('../../Assets/ForestHero.jpg'), url('../../Assets/CanyonHero.jpg'), url('../../Assets/IceHero.jpg');
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: right bottom, left top, left bottom, right top;

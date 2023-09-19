@@ -1,0 +1,35 @@
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--greyColor);
+}
+
+.aboutContainer {
+	display: flex;
+	flex-direction: wrap;
+	max-width: 1024px;
+	width: 100%;
+	background-color: aqua;
+}
+
+.aboutList {
+
+
+}
+
+.aboutContainer img {
+	width: 50%;
+	flex: 0 0 auto;
+    align-items: left;
+    justify-content: left;
+}
+
+
+.aboutList li {
+    list-style: none;
+    margin: 0;
+    justify-content: right;
+    align-items: right;
+
+}
