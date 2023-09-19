@@ -3,11 +3,18 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { MenuItems } from '../MenuItems/MenuItems';
 class Navbar extends Component {
+	state = { clicked: false };
+	handleClick = () => {
+		this.setState({ clicked: !this.state.clicked });
+	};
 	render() {
 		return (
 			<nav className='navbarItems'>
 				<h1 className='navbarLogo'>Nature Adventure</h1>
-				<ul className='navMenu'>
+				<div className='menuIcons' onClick={this.handleClick}>
+					<i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+				</div>
+				<ul className={this.state.clicked ? 'navMenu active' : 'navMenu'}>
 					{MenuItems.map((item, index) => {
 						return (
 							<li key={index}>
@@ -17,6 +24,7 @@ class Navbar extends Component {
 							</li>
 						);
 					})}
+					<button>Sign Up</button>
 				</ul>
 			</nav>
 		);
