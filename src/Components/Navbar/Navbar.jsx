@@ -28,7 +28,7 @@ class Navbar extends Component {
 						);
 					})}
 					<div className='signUp'>
-						<button>Sign Up</button>
+						<button className='navbtn'>Sign Up</button>
 					</div>
 				</ul>
 			</nav>

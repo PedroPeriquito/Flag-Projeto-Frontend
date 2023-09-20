@@ -15,10 +15,6 @@ export default function App() {
 				<Route path='/booking' element={<Booking />} />
 				<Route path='/contacts' element={<Contacts />} />
 			</Routes>
-
-			<>
-				<Home />
-			</>
 		</div>
 	);
 }

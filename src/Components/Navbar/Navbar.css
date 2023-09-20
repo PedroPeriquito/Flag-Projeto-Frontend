@@ -1,4 +1,5 @@
 .navbarItems {
+	background-color: var(--whiteColor);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -117,7 +118,7 @@ button:hover {
 		transition: none;
 	}
 
-	button {
+	.navbtn {
 		display: none;
 	}
 

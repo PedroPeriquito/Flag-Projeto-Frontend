@@ -1,23 +1,21 @@
 import './About.css';
-import AboutImg from '../../Assets/AboutImg.jpg';
+import AboutImg1 from '../../Assets/AboutImg1.jpg';
 
 const About = () => {
 	return (
 		<section className='about'>
+			<h1>About Us</h1>
+			<p>Lorem ipsum dolor sit amet consectetur.</p>
 			<div className='aboutContainer'>
 				<div className='aboutText'>
-					<h2>About us</h2>
+					<h2>Who we are</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, esse? Fuga fugit iusto molestiae. Asperiores, laborum et velit voluptates quasi fugit placeat odio quaerat harum deleniti
-						libero a, magnam veritatis.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fuga, sunt ipsum enim dolore eligendi autem aperiam minus deleniti nihil? Molestiae illum optio laboriosam aperiam itaque doloremque quisquam, repellendus doloribus, veniam eum alias perferendis. Cum asperiores repudiandae vero delectus ipsa beatae temporibus repellat magni. Minus suscipit iste eos quos dignissimos.
 					</p>
 					<div className='aboutList'>
-						<ul>
-							<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-							<li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ea natus.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-						</ul>
-						<img src={AboutImg} alt='' />
+						<div className='aboutImg'>
+							<img src={AboutImg1} alt='buring-fire-by-the-river-and-snowcapped-mountain-and-forest' />
+						</div>
 					</div>
 				</div>
 			</div>

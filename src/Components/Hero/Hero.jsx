@@ -1,16 +1,16 @@
 import './Hero.css';
-import Img1 from '../../Assets/HomeHero.jpg';
 
-const Hero = () => {
+
+const Hero = props => {
 	return (
-		<section className='hero'>
-			<img src={Img1} alt='' />
-			<div className='heroContainer'>
-				<div className='heroText'>
-					<h1 className='heroTitle'>Adventure Awaits</h1>
-					<p className='heroDescription'>What are you waiting for?</p>
-					<button className='heroButton'>Get Started</button>
-				</div>
+		<section className={props.cName}>
+			<img src={props.heroImgSrc} alt={props.heroImgText} />
+			<div className='heroText'>
+				<h1>{props.title}</h1>
+				<p>{props.text}</p>
+				<a href={props.url} className={props.btnClass}>
+					<button>{props.btnText}</button>
+				</a>
 			</div>
 		</section>
 	);
