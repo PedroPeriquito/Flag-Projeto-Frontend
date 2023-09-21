@@ -3,7 +3,6 @@ import './Navbar.css';
 import { MenuItems } from '../MenuItems/MenuItems';
 import '../Button/Button.css';
 import { Link } from 'react-router-dom';
-import { useRef } from 'react';
 
 class Navbar extends Component {
 	state = { clicked: false };
@@ -39,31 +38,3 @@ class Navbar extends Component {
 }
 
 export default Navbar;
-
-{
-	/* <div className='menuIcons'>
-				<ul className='navList'>
-					{MenuItems.map((item, index) => {
-						return (
-							<li key={index}>
-								<a href={item.url} className={item.cName}>
-									<p>
-										<i class={item.icon}></i>
-										{item.title}
-									</p>
-								</a>
-							</li>
-						);
-					})}
-					<div className='signUp'>
-						<button className='navbtn'>Sign Up</button>
-					</div>
-				</ul>
-				<div className='navClose'>
-					<i class='fa-solid fa-xmark'></i>
-				</div>
-			</div>
-			<div className='navToggle'>
-				<i class='fa-solid fa-bars'></i>
-			</div> */
-}
