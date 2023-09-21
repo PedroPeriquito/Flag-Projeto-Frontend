@@ -1,41 +1,36 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;900&family=Space+Mono&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  border: 1px solid red;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	/*   border: 1px solid red; */
 }
 
-.App{
-  text-align: center;
+.App {
+	text-align: center;
 }
 
-img{
-  display: block;
+img {
+	display: block;
 }
 
-:root{
-  --blackColor: black;
-  --whiteColor: white;
-  --greyColor: rgb(156, 156, 156);
-  --blueColor: rgb(47, 94, 247); 
+:root {
+	--blackColor: black;
+	--whiteColor: white;
+	--greyColor: rgb(71, 71, 71);
+	--greenColor: rgb(35, 114, 4);
 }
 
 @media screen and (max-width: 600px) {
-  html{
-    font-size: 14px;
-  }
+	html {
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-  html{
-    font-size: 12px;
-  }
+	html {
+		font-size: 12px;
+	}
 }
-  
-  
-
-

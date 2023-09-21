@@ -12,7 +12,9 @@ class Navbar extends Component {
 	render() {
 		return (
 			<nav className='navbarItems'>
-				<h1 className='navbarLogo'>Nature Adventure</h1>
+				<h1 className='navbarLogo'>
+					<i class='fa-solid fa-leaf'></i>Nature Adventure
+				</h1>
 				<div className='menuIcons' onClick={this.handleClick}>
 					<i className={this.state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}> </i>
 				</div>
@@ -21,10 +23,7 @@ class Navbar extends Component {
 						return (
 							<li key={index}>
 								<Link to={item.url} className={item.cName}>
-									<p>
-										<i class={item.icon}></i>
-										{item.title}
-									</p>
+									<p>{item.title}</p>
 								</Link>
 							</li>
 						);

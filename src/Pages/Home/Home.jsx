@@ -12,7 +12,7 @@ const Home = () => {
 			<Hero
 				cName='hero'
 				heroImgSrc={HomeHero}
-				heroImgText='person-holding-world-globe-facing-mountain'
+				heroImgText='boat-on-a-lake-with-mountains-and-forest'
 				title='Adventure awaits'
 				text='What are you waiting for?'
 				btnText='Get Started'

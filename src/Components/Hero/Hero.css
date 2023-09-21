@@ -27,17 +27,17 @@
 .heroText h1 {
 	font-size: 3rem;
 	font-weight: 800;
-	background-color: var(--blackColor);
+	background-color: var(--whiteColor);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .heroText p {
 	font-size: 1.3rem;
-	color: var(--blackColor);
+	color: var(--whiteColor);
 	padding: 0.5rem 0 2rem 0;
 	font-weight: 600;
-	text-shadow: 2px 2px 2px var(--whiteColor);
+	
 }
 
 .heroText .show {

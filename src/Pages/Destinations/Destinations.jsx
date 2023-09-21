@@ -7,7 +7,7 @@ const Destinations = () => {
 	return (
 		<>
 			<Navbar />
-			<Hero cName='heroMid' heroImgSrc={DestinationsHero} heroImgText='person-wearing-beige-sweater-holding-map-inside-vehicle' title='Destinations' btnClass='hide' />
+			<Hero cName='heroMid' heroImgSrc={DestinationsHero} heroImgText='shallow-focus-photography-of-black-and-silver-compasses-on-top-of-map' title='Destinations' btnClass='hide' />
 		</>
 	);
 };

@@ -1,13 +1,34 @@
-import './Trip.css';
+import forest from '../../Assets/forestTrip.jpg';
+import desert from '../../Assets/desertTrip.jpg';
+import canyon from '../../Assets/canyonTrip.jpg';
+import snow from '../../Assets/snowTrip.jpg';
 
+export const TripData = [
+	{
+		title: 'Forest',
+		text: 'The endless woods',
+		img: forest,
+		imgText: 'trees-on-forest-at-daytime',
+	},
 
-const TripData =(props)=> {
-    return (
-        <div className='tripCard'>
-            <div className='tripImage'>
-                <img src={props.img} alt="{props.imgText}" />
-            </div>
-            <h4>{props.title}</h4>
-            <p>{props.text}</p>
-        </div>
-)}
+	{
+		title: 'Desert',
+		text: 'The endless sands',
+		img: desert,
+		imgText: 'desert',
+	},
+
+	{
+		title: 'Canyon',
+		text: 'The endless rocks',
+		img: canyon,
+		imgText: 'rock-formation',
+	},
+
+	{
+		title: 'Snow',
+		text: 'The endless snow',
+		img: snow,
+		imgText: 'a-rare-sight-of-moraine-lake-in-winter',
+	},
+];
