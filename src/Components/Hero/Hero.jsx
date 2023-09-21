@@ -1,16 +1,19 @@
 import './Hero.css';
 
-const Hero = () => {
+const Hero = props => {
 	return (
-		<section className='hero'>
-			<div className='heroContainer'>
+		<>
+			<section className={props.cName}>
+				<img src={props.heroImgSrc} alt={props.heroImgText} className='heroImg' />
 				<div className='heroText'>
-					<h1 className='heroTitle'>Adventure Awaits</h1>
-					<p className='heroDescription'>What are you waiting for?</p>
-					<button className='heroButton'>Get Started</button>
+					<h1>{props.title}</h1>
+					<p>{props.text}</p>
+					<a href={props.url} className={props.btnClass}>
+						{props.btnText}
+					</a>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	);
 };
 

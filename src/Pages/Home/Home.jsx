@@ -2,16 +2,24 @@ import './Home.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
+import HomeHero from '../../Assets/homeHero.jpg';
 
 const Home = () => {
 	return (
-		<div>
-			<>
-				<Navbar />
-				<Hero />
-				<About />
-			</>
-		</div>
+		<>
+			<Navbar />
+			<Hero
+				cName='hero'
+				heroImgSrc={HomeHero}
+				heroImgText='person-holding-world-globe-facing-mountain'
+				title='Adventure awaits'
+				text='What are you waiting for?'
+				btnText='Get Started'
+				url='/'
+				btnClass='show'
+			/>
+			<About />
+		</>
 	);
 };
 

@@ -1,7 +1,7 @@
 import './Booking.css';
 
 const Booking = () => {
-	return <div>Booking</div>;
+	return <></>;
 };
 
 export default Booking;

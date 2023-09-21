@@ -1,31 +1,40 @@
+import { Component } from 'react';
 import './Navbar.css';
+import { MenuItems } from '../MenuItems/MenuItems';
+import '../Button/Button.css';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-	return (
-		<section className='navbar'>
-			<div className='navContainer'>
-				<span className='logo'>Nature Adventure</span>
-				<div className='navitems'>
-					<ul className='navList'>
-						<li className='navItem'>
-							<a href='#' className='navLink'></a>Home
-						</li>
-						<li className='navItem'>
-							<a href='#' className='navLink'></a>Destinations
-						</li>
-						<li className='navItem'>
-							<a href='#' className='navLink'></a>Booking
-						</li>
-						<li className='navItem'>
-							<a href='#' className='navLink'></a>Contacts
-						</li>
-					</ul>
-					<button className='navButton'>Sign Up</button>
-					<button className='navButton'>Login</button>
+class Navbar extends Component {
+	state = { clicked: false };
+	handleClick = () => {
+		this.setState({ clicked: !this.state.clicked });
+	};
+	render() {
+		return (
+			<nav className='navbarItems'>
+				<h1 className='navbarLogo'>Nature Adventure</h1>
+				<div className='menuIcons' onClick={this.handleClick}>
+					<i className={this.state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}> </i>
 				</div>
-			</div>
-		</section>
-	);
-};
+				<ul className={this.state.clicked ? 'navMenu active' : 'navMenu'}>
+					{MenuItems.map((item, index) => {
+						return (
+							<li key={index}>
+								<Link to={item.url} className={item.cName}>
+									<p>
+										<i class={item.icon}></i>
+										{item.title}
+									</p>
+								</Link>
+							</li>
+						);
+					})}
+
+					<button className='navbtn'>Sign Up</button>
+				</ul>
+			</nav>
+		);
+	}
+}
 
 export default Navbar;
