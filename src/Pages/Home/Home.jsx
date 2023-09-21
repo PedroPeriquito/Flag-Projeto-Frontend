@@ -7,7 +7,7 @@ import HomeHero from '../../Assets/homeHero.jpg';
 const Home = () => {
 	return (
 		<>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Hero
 				cName='hero'
 				heroImgSrc={HomeHero}
