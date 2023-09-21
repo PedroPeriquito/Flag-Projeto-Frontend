@@ -14,19 +14,20 @@
 	z-index: 9999;
 	top: 20px;
 }
-.navbarLogo {
+.navHomeLink {
+	text-decoration: none;
 	color: var(--greenColor);
 	font-size: 1.5rem;
 	cursor: pointer;
 }
 
-.navbarLogo i {
+.navHomeLink i {
 	padding-right: 10px;
 }
 
 .navMenu {
 	display: grid;
-	grid-template-columns: repeat(6, auto);
+	grid-template-columns: repeat(5, auto);
 	grid-gap: 20px;
 	list-style: none;
 	align-items: center;
@@ -59,6 +60,7 @@
 .menuIcons {
 	display: none;
 }
+
 
 @media screen and (max-width: 850px) {
 	.navbarItems {
