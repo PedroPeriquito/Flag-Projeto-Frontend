@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../../Assets/DesertHero.jpg'), url('../../Assets/ForestHero.jpg'), url('../../Assets/CanyonHero.jpg'), url('../../Assets/IceHero.jpg');
+	background-image: url('../../Assets/desertHero.jpg'), url('../../Assets/forestHero.jpg'), url('../../Assets/canyonHero.jpg'), url('../../Assets/iceHero.jpg');
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: right bottom, left top, left bottom, right top;
