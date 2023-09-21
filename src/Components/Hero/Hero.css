@@ -4,6 +4,12 @@
 	position: relative;
 }
 
+.heroMid {
+	width: 100%;
+	height: 70%;
+	position: relative;
+}
+
 .heroImg {
 	width: 100%;
 	height: 100%;
@@ -30,6 +36,8 @@
 	font-size: 1.3rem;
 	color: var(--blackColor);
 	padding: 0.5rem 0 2rem 0;
+	font-weight: 600;
+	text-shadow: 2px 2px 2px var(--whiteColor);
 }
 
 .heroText .show {
