@@ -2,14 +2,14 @@ import './Home.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
-import HomeHero from '../../Assets/HomeHero.jpg';
+import HomeHero from '../../Assets/homeHero.jpg';
 
 const Home = () => {
 	return (
 		<>
 			<Navbar />
 			<Hero
-				cName='Hero'
+				cName='hero'
 				heroImgSrc={HomeHero}
 				heroImgText='person-holding-world-globe-facing-mountain'
 				title='Adventure awaits'
