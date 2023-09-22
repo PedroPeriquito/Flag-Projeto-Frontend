@@ -7,27 +7,32 @@
 	font-size: 2rem;
 }
 
+
 .tripContainer {
-	margin-top: 3rem;
+	padding-top: 4rem;
 	display: flex;
 	flex-wrap: wrap;
+	text-decoration: none;
+	color: var(--blackColor);
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .tripCard {
-	width: 50%;
+	max-width: 400px;
 	text-align: start;
 	box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.11);
 	border-radius: 5px;
 	cursor: pointer;
 	padding: 1rem 0.8rem;
+	margin: 0 auto;
+
 }
 
 .tripImage {
 	max-height: 200px;
 	overflow: hidden;
 	border-radius: 10px;
-    
-    
 }
 
 .tripImage img {
@@ -35,9 +40,9 @@
 	height: 100%;
 	transition: 0.3s ease-in-out;
 	border-radius: 7px;
-    
 }
 
 .tripImage:hover img {
 	transform: scale(1.3);
 }
+

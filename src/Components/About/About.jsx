@@ -14,6 +14,11 @@ const About = () => {
 						doloremque quisquam, repellendus doloribus, veniam eum alias perferendis. Cum asperiores repudiandae vero delectus ipsa beatae temporibus repellat magni. Minus suscipit iste eos quos
 						dignissimos.
 					</p>
+					<br />
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, inventore eum quas non dolore nam molestiae error tempora ad, itaque quod ratione debitis facere sit quam officia.
+						Distinctio libero, veniam atque earum ipsum omnis quidem molestiae blanditiis facere dolor impedit itaque exercitationem eaque minima cumque magnam, assumenda officiis reiciendis.
+					</p>
 				</div>
 				<div className='aboutImg'>
 					<img src={aboutImg1} alt='buring-fire-by-the-river-and-snowcapped-mountain-and-forest' />

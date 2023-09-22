@@ -31,4 +31,5 @@ export const TripData = [
 		img: snow,
 		imgText: 'a-rare-sight-of-moraine-lake-in-winter',
 	},
+	
 ];

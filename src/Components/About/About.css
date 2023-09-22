@@ -4,13 +4,17 @@
 
 .about h1 {
 	font-size: 2rem;
+	align-items: center;
+	justify-content: center;
 }
 
 .aboutContainer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 4.5rem;
+	padding-top: 4.5rem;
+	max-width: 1500px;
+	margin: 0 auto;
 }
 
 .aboutText {
@@ -27,15 +31,14 @@
 .aboutImg {
 	width: 55%;
 	flex: 0 0 auto;
-	
 }
 
 .aboutImg img {
-	width: 100%;
+	max-width: 500px;
 	height: auto;
 	border-radius: 6px;
 	box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
-	
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 850px) {
@@ -44,7 +47,7 @@
 	}
 	.aboutContainer {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		margin-top: 2.5rem;
 	}
 
@@ -54,6 +57,4 @@
 	.aboutImg {
 		padding: 1.8rem 0;
 	}
-
-	
 }
