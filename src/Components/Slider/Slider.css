@@ -1,5 +1,5 @@
-h2,
-h4 {
+.sectionTitle,
+.articleTitle {
 	letter-spacing: 0.1rem;
 	text-transform: capitalize;
 	line-height: 1.25;
@@ -9,7 +9,7 @@ h4 {
 .section {
 	width: 95vw;
 	margin: 5rem auto;
-	max-width: 1170px;
+	max-width: calc(100vw - 4rem);
 }
 
 .icon {
@@ -29,7 +29,7 @@ h4 {
 	overflow: hidden;
 }
 
-article {
+.article {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -39,14 +39,14 @@ article {
 	transition: all 0.3s linear;
 }
 
-article.activeSlide {
+.article.activeSlide {
 	opacity: 1;
 	transform: translate(0);
 }
-article.lastSlide {
+.article.lastSlide {
 	transform: translate(-100%);
 }
-article.nextSlide {
+.article.nextSlide {
 	transform: translate(100%);
 }
 .locationImg {
@@ -59,7 +59,7 @@ article.nextSlide {
 	margin: 0 auto;
 }
 
-article h4 {
+.article h4 {
 	text-transform: uppercase;
 	color: var(--greenColor);
 	margin: 1rem 0;
@@ -69,15 +69,14 @@ article h4 {
 	text-transform: capitalize;
 	margin-bottom: 0.75rem;
 	color: var(--blackColor);
-	text-align: center;
+	text-align: left;
 	margin-bottom: 2rem;
 }
 
-title h2 {
+.title h2 {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: 500;
+	align-items: left;
+	justify-content: left;
 }
 
 .text {

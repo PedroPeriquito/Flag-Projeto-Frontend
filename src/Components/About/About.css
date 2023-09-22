@@ -1,5 +1,10 @@
 .about {
-	margin: 4rem 6rem;
+	margin: 4rem 0;
+}
+
+.aboutWrapper {
+	max-width: calc(100vw - 4rem);
+	margin: 0 auto;
 }
 
 .about h1 {

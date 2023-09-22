@@ -28,7 +28,7 @@ const Slider = () => {
 	return (
 		<section className='section'>
 			<div className='title'>
-				<h2>Destinations</h2>
+				<h2 className='sectionTitle'>Destinations</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem placeat quasi aspernatur facilis impedit dolore blanditiis nobis numquam eius debitis.</p>
 				<div className='sectionCenter'>
 					{location.map((item, indexLocation) => {
@@ -41,11 +41,11 @@ const Slider = () => {
 							position = 'lastSlide';
 						}
 						return (
-							<article className={position} key={id}>
+							<div className={`article ${position}`} key={id}>
 								<img src={img} alt={imgText} className='locationImg' />
-								<h4>{title}</h4>
+								<h4 className='articleTitle'>{title}</h4>
 								<p className='text'>{text}</p>
-							</article>
+							</div>
 						);
 					})}
 					<button className='prev' onClick={() => setIndex(index - 1)}>
