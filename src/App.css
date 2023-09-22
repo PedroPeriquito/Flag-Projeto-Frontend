@@ -21,6 +21,7 @@ img {
 	--whiteColor: white;
 	--greyColor: rgb(71, 71, 71);
 	--greenColor: rgb(35, 114, 4);
+	--lightGreyColor: rgb(189, 189, 189);
 }
 
 @media screen and (max-width: 600px) {

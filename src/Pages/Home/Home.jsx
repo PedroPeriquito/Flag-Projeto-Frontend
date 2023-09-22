@@ -2,7 +2,7 @@ import './Home.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
-import Trip from '../../Components/Trip/Trip';
+import Slider from '../../Components/Slider/Slider';
 import Footer from '../../Components/Footer/Footer';
 import HomeHero from '../../Assets/homeHero.jpg';
 
@@ -20,7 +20,7 @@ const Home = () => {
 				url='/'
 				btnClass='show'
 			/>
-			<Trip />
+			<Slider />
 			<About />
 			<Footer />
 		</>

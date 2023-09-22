@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import './Slider.css';
-import { tripData } from '../Trip/TripData';
+import { sliderData } from '../Slider/SliderData';
 
 const Slider = () => {
-	const [location] = useState(tripData);
+	const [location] = useState(sliderData);
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -29,6 +29,7 @@ const Slider = () => {
 		<section className='section'>
 			<div className='title'>
 				<h2>Destinations</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem placeat quasi aspernatur facilis impedit dolore blanditiis nobis numquam eius debitis.</p>
 				<div className='sectionCenter'>
 					{location.map((item, indexLocation) => {
 						const { id, img, imgText, title, text } = item;

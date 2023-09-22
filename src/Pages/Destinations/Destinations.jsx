@@ -7,9 +7,9 @@ import Slider from '../../Components/Slider/Slider';
 const Destinations = () => {
 	return (
 		<>
-			<Slider />
-		{/* 	<Navbar />
-			<Hero cName='heroMid' heroImgSrc={DestinationsHero} heroImgText='shallow-focus-photography-of-black-and-silver-compasses-on-top-of-map' title='Destinations' btnClass='hide' /> */}
+			
+			<Navbar />
+			<Hero cName='heroMid' heroImgSrc={DestinationsHero} heroImgText='shallow-focus-photography-of-black-and-silver-compasses-on-top-of-map' title='Destinations' btnClass='hide' />
 		</>
 	);
 };

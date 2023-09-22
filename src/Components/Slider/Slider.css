@@ -1,6 +1,4 @@
-h1,
 h2,
-h3,
 h4 {
 	letter-spacing: 0.1rem;
 	text-transform: capitalize;
@@ -9,7 +7,7 @@ h4 {
 }
 
 .section {
-	width: 90vw;
+	width: 95vw;
 	margin: 5rem auto;
 	max-width: 1170px;
 }
@@ -52,20 +50,19 @@ article.nextSlide {
 	transform: translate(100%);
 }
 .locationImg {
-	border-radius: 14px;
-	margin-bottom: 1rem;
-	max-width: 400px;
-	max-height: 200px;
+	border-radius: 30px;
+	max-width: 700px;
+	max-height: 350px;
 	object-fit: cover;
 	border: 3px solid var(--greenColor);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 article h4 {
 	text-transform: uppercase;
 	color: var(--greenColor);
-	margin-bottom: 0.25rem;
+	margin: 1rem 0;
 }
 
 .title {
@@ -84,7 +81,7 @@ title h2 {
 }
 
 .text {
-	max-width: 35em;
+	max-width: 95em;
 	margin: 0 auto;
 	margin-top: 2rem;
 	line-height: 2;
@@ -96,14 +93,14 @@ title h2 {
 	position: absolute;
 	top: 200px;
 	transform: translateY(-50%);
-	background-color: var(--greyColor);
+	background-color: var(--lightGreyColor);
 	color: var(--blackColor);
-	width: 1.25rem;
-	height: 1.25rem;
+	width: 2rem;
+	height: 2rem;
 	display: grid;
 	place-items: center;
 	border-color: transparent;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	border-radius: 0.25rem;
 	cursor: pointer;
 	transition: all 0.3 linear;
@@ -122,20 +119,25 @@ title h2 {
 	right: 0;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
 	.section {
-		width: 95vw;
+		width: 90vw;
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
 	.text {
-		max-width: 95em;
+		max-width: 35em;
 	}
 	.prev,
 	.next {
-		width: 2rem;
-		height: 2rem;
-		font-size: 1.5rem;
+        top: 100px;
+		width: 1.25rem;
+		height: 1.25rem;
+		font-size: 1rem;
+	}
+	.locationImg {
+		max-width: 400px;
+		max-height: 200px;
 	}
 }
