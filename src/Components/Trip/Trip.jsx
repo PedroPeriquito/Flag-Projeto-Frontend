@@ -1,16 +1,17 @@
 import './Trip.css';
-import { TripData } from './TripData';
-import { Link } from 'react-router-dom';
+import { tripData } from './TripData';
+
 
 const Trip = () => {
 	return (
 		<div className='trip'>
 			<h1>Our Destinations</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, debitis hic quaerat dolore quia ratione excepturi esse fugiat possimus libero.
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, placeat?
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, debitis hic quaerat dolore quia ratione excepturi esse fugiat possimus libero. Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Odio, placeat?
 			</p>
-			<Link to='/destinations' className='tripContainer'>
-				{TripData.map((item, index) => {
+			<div className='tripContainer'>
+				{tripData.map((item, index) => {
 					return (
 						<div className='tripCard' key={index}>
 							<div className='tripImage'>
@@ -21,9 +22,12 @@ const Trip = () => {
 						</div>
 					);
 				})}
-			</Link>
+			</div>
 		</div>
 	);
 };
 
 export default Trip;
+
+
+

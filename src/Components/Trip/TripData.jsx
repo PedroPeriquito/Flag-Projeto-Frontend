@@ -3,7 +3,7 @@ import desert from '../../Assets/desertTrip.jpg';
 import canyon from '../../Assets/canyonTrip.jpg';
 import snow from '../../Assets/snowTrip.jpg';
 
-export const TripData = [
+export const tripData = [
 	{
 		title: 'Forest',
 		text: 'The endless woods',
@@ -33,3 +33,4 @@ export const TripData = [
 	},
 	
 ];
+
