@@ -18,4 +18,4 @@ const Hero = props => {
 };
 
 export default Hero;
-<style></style>;
+

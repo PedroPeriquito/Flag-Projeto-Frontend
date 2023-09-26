@@ -1,10 +1,12 @@
 import './Trip.css';
-import { ProductHeader } from '../ProductHeader/ProductHeader';
+
 import { Testimonial } from '../Testimonial/Testimonial';
 
 const Trip = () => {
-	<>
-	<productHeader />
-	</>;
+	return (
+		<>
+			
+		</>
+	);
 };
 export default Trip;

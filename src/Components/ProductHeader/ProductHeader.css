@@ -1,0 +1,112 @@
+.productContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.productWrapper {
+	width: 100%;
+	max-width: calc(100vw - 200px);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+	text-align:left;
+}
+
+.bookNow {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	border: none;
+	padding: 1rem 2rem;
+	color: var(--whiteColor);
+	background-color: var(--greyColor);
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.productTitle {
+	font-size: 1.5rem;
+}
+
+.productAdress {
+	font-size: 1.3rem;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.productDistance {
+	color: var(--blackColor);
+	font-weight: 500;
+}
+
+.productPrice {
+	color: var(--blackColor);
+	font-weight: 500;
+}
+
+.productImages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.productImgWrapper {
+	width: 33%;
+}
+
+.productImg {
+	width: 100%;
+	object-fit: cover;
+}
+
+.productDetails {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.productDetailsText {
+	flex: 3;
+}
+
+.productDescription {
+	font-size: 1rem;
+	margin-top: 20px;
+}
+
+.productDetailsPrice {
+	flex: 1;
+	background-color: var(--lightGreyColor);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.productDetailsPrice h2 {
+	font-size: 1.5rem;
+	color: var(--blackColor);
+}
+
+.productDetailsPrice span {
+	font-size: 1rem;
+}
+
+.productDetailsPrice h3 {
+	font-weight: 300;
+}
+
+.productDetailsPrice button {
+	border: none;
+	padding: 10px 20px;
+	background-color: var(--greyColor);
+	color: var(--whiteColor);
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
