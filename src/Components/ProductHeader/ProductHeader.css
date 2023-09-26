@@ -7,7 +7,7 @@
 
 .productWrapper {
 	width: 100%;
-	max-width: calc(100vw - 200px);
+	max-width: calc(100% - 200px);
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -42,8 +42,8 @@
 	justify-content: space-between;
 }
 .productImgWrapper {
-	width: calc(33% - 5px);
-	margin: 5px;
+	width: calc(33% - 6px);
+	margin: 4px;
 }
 
 .productImg {
@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 880px) {
 	.productImgWrapper {
-		width: calc(50% - 5px);
+		width: calc(50% - 8px);
 	}
 	.productWrapper {
 		width: 100%;

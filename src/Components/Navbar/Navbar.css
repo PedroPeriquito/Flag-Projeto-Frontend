@@ -1,4 +1,3 @@
-
 .navbarItems {
 	background-color: var(--whiteColor);
 	display: flex;
@@ -6,15 +5,16 @@
 	align-items: center;
 	padding: 0 30px;
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-	width: calc(100% - 2rem);
+	width: calc(100% - 2.5rem);
 	height: 80px;
 	border-radius: 14px;
 	position: fixed;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translateX(-50%);
 	z-index: 9999;
 	margin-top: 2rem;
 }
+
 .navHomeLink {
 	text-decoration: none;
 	color: var(--greenColor);
@@ -36,29 +36,27 @@
 
 .navLinks {
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.navLinks p {
+	text-decoration: none;
 	color: var(--blackColor);
 	font-size: 1rem;
-	padding: 0.5rem;
+	padding: 0.5rem 0.9rem;
 	white-space: nowrap;
 }
-
-.navLinks i {
-	padding-right: 10px;
-}
-
-.navLinks :hover {
+.navLinks p:hover {
 	background-color: var(--greenColor);
 	color: var(--whiteColor);
 	border-radius: 4px;
 	transition: all 0.2s ease-in-out;
-	padding: 0.5rem;
 }
 
-.navLinksMobile {
+.menuIcons i {
 	display: none;
 }
-
-.menuIcons {
+.navLinksMobile {
 	display: none;
 }
 
@@ -84,6 +82,7 @@
 	.navbarItems {
 		z-index: 99;
 	}
+
 	.navMenu {
 		display: none;
 		flex-direction: column;
@@ -113,11 +112,11 @@
 		display: block;
 		width: 100%;
 		font-size: 1.2rem;
-		padding: 2rem 0;
+		margin: 1rem 0;
 		text-align: center;
 	}
 
-	.navLinks :hover {
+	.navLinks:hover {
 		background-color: var(--greenColor);
 		transition: none;
 	}
@@ -145,9 +144,10 @@
 		display: block;
 		cursor: pointer;
 	}
+
 	.menuIcons i {
 		font-size: 1.2rem;
 		color: var(--blackColor);
+		display: block;
 	}
 }
-
