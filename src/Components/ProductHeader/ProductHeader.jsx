@@ -1,39 +1,14 @@
 import React from 'react';
 import './ProductHeader.css';
-import forest from '../../Assets/forestTrip.jpg';
-import desert from '../../Assets/desertTrip.jpg';
-
 import { productItems } from '../ProductHeader/ProductItems';
-import { photos } from '../ProductHeader/ProductItems';
 
 const ProductHeader = () => {
-	const photos = [
-		{
-			src: forest,
-		},
-		{
-			src: desert,
-		},
-		{
-			src: desert,
-		},
-		{
-			src: forest,
-		},
-		{
-			src: forest,
-		},
-		{
-			src: forest,
-		},
-	];
 	return (
 		<div>
 			{productItems.map((item, id) => {
 				return (
 					<div className='productContainer' key={id}>
 						<div className='productWrapper'>
-							<button className='bookNow'>Book Now!</button>
 							<h2 className='productTitle'>{item.title}</h2>
 							<div className='productAdress'>
 								<span>{item.adress}</span>
@@ -41,11 +16,24 @@ const ProductHeader = () => {
 							<span className='productDistance'>{item.distance}</span>
 							<span className='productPrice'>{item.price}</span>
 							<div className='productImages'>
-								{photos.map(photo => (
-									<div className='productImgWrapper'>
-										<img src={photo.src} alt={photo.altText} className='productImg' />
-									</div>
-								))}
+								<div className='productImgWrapper'>
+									<img src={item.src1} alt={item.altText1} className='productImg' />
+								</div>
+								<div className='productImgWrapper'>
+									<img src={item.src2} alt={item.altText2} className='productImg' />
+								</div>
+								<div className='productImgWrapper'>
+									<img src={item.src3} alt={item.altText3} className='productImg' />
+								</div>
+								<div className='productImgWrapper'>
+									<img src={item.src4} alt={item.altText4} className='productImg' />
+								</div>
+								<div className='productImgWrapper'>
+									<img src={item.src5} alt={item.altText5} className='productImg' />
+								</div>
+								<div className='productImgWrapper'>
+									<img src={item.src6} alt={item.altText6} className='productImg' />
+								</div>
 							</div>
 							<div className='productDetails'>
 								<div className='productDetailsText'>
@@ -55,7 +43,9 @@ const ProductHeader = () => {
 								<div className='productDetailsPrice'>
 									<h2>{item.detailedTitle}</h2>
 									<span>{item.detailedText}</span>
-									<h3>{item.detailedPrice}</h3>
+									<h3>
+										<b>{item.detailedPrice}</b>
+									</h3>
 									<button>Book Now!</button>
 								</div>
 							</div>

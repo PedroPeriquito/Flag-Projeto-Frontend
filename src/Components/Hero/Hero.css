@@ -7,8 +7,8 @@
 }
 
 .heroMid {
-	width: calc(100% - 64px);
-	height: 70%;
+	width: calc(100% - 2rem);
+	height: 50%;
 	position: relative;
 	top: 32px;
 	margin: 0 auto;

@@ -16,8 +16,8 @@ const Home = () => {
 				heroImgText='boat-on-a-lake-with-mountains-and-forest'
 				title='Adventure awaits'
 				text='What are you waiting for?'
-				btnText='Get Started'
-				url='/'
+				btnText='Go to Destinations'
+				url='/destinations'
 				btnClass='show'
 			/>
 			<Slider />
