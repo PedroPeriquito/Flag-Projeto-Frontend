@@ -34,9 +34,9 @@ const ProductHeader = () => {
 									<h3>
 										<b>{item.detailedPrice}</b>
 									</h3>
-									<a href='/booking' className='productDetailsPrice'>
+									<Link to='/booking' className='productDetailsPriceLink'>
 										<button>Book Now!</button>
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>

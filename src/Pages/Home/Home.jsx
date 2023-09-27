@@ -9,7 +9,6 @@ import HomeHero from '../../Assets/homeHero.jpg';
 const Home = () => {
 	return (
 		<>
-			<Navbar />
 			<Hero
 				cName='hero'
 				heroImgSrc={HomeHero}
@@ -22,7 +21,6 @@ const Home = () => {
 			/>
 			<Slider />
 			<About />
-			<Footer />
 		</>
 	);
 };

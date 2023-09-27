@@ -1,13 +1,13 @@
 import './Contacts.css';
-import Navbar from '../../Components/Navbar/Navbar';
 import Hero from '../../Components/Hero/Hero';
-import HomeHero from '../../Assets/homeHero.jpg';
+import ContactsHero from '../../Assets/contactsHero.jpg';
+import ContactForm from '../../Components/ContactForm/ContactForm';
 
 const Contacts = () => {
 	return (
 		<>
-			<Navbar />
-			<Hero cName='heroMid' heroImgSrc={HomeHero} heroImgText='person-holding-world-globe-facing-mountain' title='Adventure awaits' btnClass='hide' />
+			<Hero cName='heroMid' heroImgSrc={ContactsHero} heroImgText='person-holding-world-globe-facing-mountain' title='Contacts' btnClass='hide' />
+			<ContactForm />
 		</>
 	);
 };

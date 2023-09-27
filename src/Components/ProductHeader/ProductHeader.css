@@ -42,7 +42,7 @@
 	justify-content: space-between;
 }
 .productImgWrapper {
-	width: calc(33% - 4px);
+	width: calc(33% - 6px);
 	margin: 4px;
 }
 
@@ -76,6 +76,15 @@
 	gap: 20px;
 }
 
+.productDetailsPriceLink {
+	flex: 1;
+	background-color: var(--lightGreyColor);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .productDetailsPrice h2 {
 	font-size: 1.5rem;
 	color: var(--blackColor);
@@ -86,7 +95,7 @@
 }
 
 .productDetailsPrice h3 {
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .productDetailsPrice button {
@@ -101,7 +110,7 @@
 
 @media screen and (max-width: 880px) {
 	.productImgWrapper {
-		width: calc(50% - 4px);
+		width: calc(50% - 8px);
 	}
 	.productWrapper {
 		width: 100%;

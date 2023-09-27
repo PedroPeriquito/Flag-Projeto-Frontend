@@ -1,4 +1,5 @@
 .footer {
+	margin-top: auto;
 	padding: 1.5rem 3rem;
 	background-color: var(--greenColor);
 	color: var(--blackColor);

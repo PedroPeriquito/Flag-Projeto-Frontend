@@ -1,4 +1,5 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -8,27 +9,27 @@ const Footer = () => {
 					<i>©</i>Nature Adventure
 				</h4>
 				<ul className='footerLinks'>
-					<a href='/' className='footerLink'>
+					<Link to='Privacidade' className='footerLink'>
 						<li>Privacidade</li>
-					</a>
-					<a href='/' className='footerLink'>
+					</Link>
+					<Link to='Termos' className='footerLink'>
 						<li>Termos</li>
-					</a>
-					<a href='/' className='footerLink'>
+					</Link>
+					<Link to='Support' className='footerLink'>
 						<li>Support</li>
-					</a>
-					<a href='/' className='footerLink'>
+					</Link>
+					<Link to='FAQ' className='footerLink'>
 						<li>FAQ</li>
-					</a>
+					</Link>
 				</ul>
 			</div>
 			<div className='footerRight'>
-				<a href='/' className='footerIcon'>
+				<Link to='https://www.linkedin.com' className='footerIcon' target='_blank'>
 					<i class='fa-brands fa-linkedin'></i>
-				</a>
-				<a href='/' className='footerIcon'>
+				</Link>
+				<Link to='https://github.com' className='footerIcon' target='_blank'>
 					<i class='fa-brands fa-github'></i>
-				</a>
+				</Link>
 			</div>
 		</div>
 	);
