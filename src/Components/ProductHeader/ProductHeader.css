@@ -42,7 +42,7 @@
 	justify-content: space-between;
 }
 .productImgWrapper {
-	width: calc(33% - 6px);
+	width: calc(33% - 4px);
 	margin: 4px;
 }
 
@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 880px) {
 	.productImgWrapper {
-		width: calc(50% - 8px);
+		width: calc(50% - 4px);
 	}
 	.productWrapper {
 		width: 100%;

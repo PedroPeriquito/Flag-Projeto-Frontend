@@ -2,7 +2,6 @@ import './Destinations.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Hero from '../../Components/Hero/Hero';
 import DestinationsHero from '../../Assets/destinationsHero.jpg';
-import Trip from '../../Components/Trip/Trip';
 import ProductHeader from '../../Components/ProductHeader/ProductHeader';
 
 const Destinations = () => {

@@ -1,4 +1,5 @@
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 const Hero = props => {
 	return (
@@ -8,9 +9,9 @@ const Hero = props => {
 				<div className='heroText'>
 					<h1>{props.title}</h1>
 					<p>{props.text}</p>
-					<a href={props.url} className={props.btnClass}>
+					<Link to={props.url} className={props.btnClass}>
 						{props.btnText}
-					</a>
+					</Link>
 				</div>
 			</section>
 		</>
@@ -18,4 +19,3 @@ const Hero = props => {
 };
 
 export default Hero;
-

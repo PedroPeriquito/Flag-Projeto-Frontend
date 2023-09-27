@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProductHeader.css';
 import { productItems } from '../ProductHeader/ProductItems';
+import { Link } from 'react-router-dom';
 
 const ProductHeader = () => {
 	return (
@@ -16,24 +17,11 @@ const ProductHeader = () => {
 							<span className='productDistance'>{item.distance}</span>
 							<span className='productPrice'>{item.price}</span>
 							<div className='productImages'>
-								<div className='productImgWrapper'>
-									<img src={item.src1} alt={item.altText1} className='productImg' />
-								</div>
-								<div className='productImgWrapper'>
-									<img src={item.src2} alt={item.altText2} className='productImg' />
-								</div>
-								<div className='productImgWrapper'>
-									<img src={item.src3} alt={item.altText3} className='productImg' />
-								</div>
-								<div className='productImgWrapper'>
-									<img src={item.src4} alt={item.altText4} className='productImg' />
-								</div>
-								<div className='productImgWrapper'>
-									<img src={item.src5} alt={item.altText5} className='productImg' />
-								</div>
-								<div className='productImgWrapper'>
-									<img src={item.src6} alt={item.altText6} className='productImg' />
-								</div>
+								{[1, 2, 3, 4, 5, 6].map(index => (
+									<div className='productImgWrapper' key={index}>
+										<img src={item[`src${index}`]} alt={item[`altText${index}`]} className='productImg' />
+									</div>
+								))}
 							</div>
 							<div className='productDetails'>
 								<div className='productDetailsText'>
@@ -46,7 +34,9 @@ const ProductHeader = () => {
 									<h3>
 										<b>{item.detailedPrice}</b>
 									</h3>
-									<button>Book Now!</button>
+									<a href='/booking' className='productDetailsPrice'>
+										<button>Book Now!</button>
+									</a>
 								</div>
 							</div>
 						</div>
