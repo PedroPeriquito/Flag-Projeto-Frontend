@@ -111,6 +111,7 @@
 @media screen and (max-width: 880px) {
 	.productImgWrapper {
 		width: calc(50% - 8px);
+		margin: 4px auto;
 	}
 	.productWrapper {
 		width: 100%;

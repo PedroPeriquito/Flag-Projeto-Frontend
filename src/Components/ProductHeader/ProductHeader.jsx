@@ -17,9 +17,9 @@ const ProductHeader = () => {
 							<span className='productDistance'>{item.distance}</span>
 							<span className='productPrice'>{item.price}</span>
 							<div className='productImages'>
-								{[1, 2, 3, 4, 5, 6].map(index => (
+								{item.images.map((i, index) => (
 									<div className='productImgWrapper' key={index}>
-										<img src={item[`src${index}`]} alt={item[`altText${index}`]} className='productImg' />
+										<img src={i.src} alt={i.altText} className='productImg' />
 									</div>
 								))}
 							</div>

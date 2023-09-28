@@ -2,16 +2,17 @@
 	margin: 4rem 6rem;
 	color: var(--blackColor);
 }
-
-.formContainer form {
-	padding-top: 3rem;
+.formContainer h2 {
+	margin-bottom: 3rem;
+}
+.form {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
 	margin: auto;
 }
 
-.formContainer input {
+.formField {
 	height: 3rem;
 	padding: 0 1rem;
 	margin-bottom: 2rem;
@@ -19,11 +20,15 @@
 	border: 1px solid var(--blackColor);
 }
 
+.formContainer label {
+	text-align: left;
+}
+
 .formContainer textarea {
-	padding: 1rem;
-	margin-bottom: 2rem;
+	padding: 0.5rem;
 	border-radius: 0.3rem;
 	border: 1px solid var(--blackColor);
+	height: 8rem;
 }
 
 .formContainer button {

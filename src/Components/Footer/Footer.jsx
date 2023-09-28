@@ -25,10 +25,10 @@ const Footer = () => {
 			</div>
 			<div className='footerRight'>
 				<Link to='https://www.linkedin.com' className='footerIcon' target='_blank'>
-					<i class='fa-brands fa-linkedin'></i>
+					<i className='fa-brands fa-linkedin'></i>
 				</Link>
 				<Link to='https://github.com' className='footerIcon' target='_blank'>
-					<i class='fa-brands fa-github'></i>
+					<i className='fa-brands fa-github'></i>
 				</Link>
 			</div>
 		</div>
