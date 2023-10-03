@@ -16,7 +16,7 @@ export const productItems = [
 		detailedPrice: '1050$ for 7 days',
 		images: [
 			{
-				src: forest,
+				src: desert,
 				altText: 'trees-on-forest-at-daytime',
 			},
 			{
