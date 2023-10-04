@@ -1,0 +1,121 @@
+.reviewContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.reviewHeader {
+	letter-spacing: 1px;
+	margin: 30px 0;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviewHeader h2 {
+	font-size: 2.2rem;
+	font-weight: 500;
+	background-color: var(--blackColor);
+	color: var(--whiteColor);
+	padding: 10px 20px;
+}
+
+.reviewBoxContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1500px;
+}
+
+.reviewBox {
+	width: 500px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+	background-color: var(--whiteColor);
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+	height: 250px;
+}
+
+.profileImg {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.profileImg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.nameUser {
+	display: flex;
+	flex-direction: column;
+}
+
+.nameUser strong {
+	color: var(--blackColor);
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.review {
+	color: rgb(235, 223, 66);
+}
+
+.boxTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.clientComment {
+	font-size: 0.9rem;
+	color: var(--blackColor);
+}
+
+.reviewBox:hover {
+	transform: translateY(-10px);
+	transition: all ease 0.3s;
+}
+
+@media screen and (max-width: 1060px) {
+	.reviewBox {
+		width: 45%;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	.reviewBox {
+		width: 100%;
+	}
+	.reviewHeader h2 {
+		font-size: 1.45rem;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.boxTop {
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+	}
+	.review {
+		margin-top: 10px;
+	}
+}
