@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-	border: 1px solid red;
+	/* 	border: 1px solid red; */
 }
 
 .App {
@@ -25,6 +25,7 @@ img {
 	--greyColor: rgb(71, 71, 71);
 	--greenColor: rgb(35, 114, 4);
 	--lightGreyColor: rgb(189, 189, 189);
+	--lightGreenColor: rgb(124, 194, 129);
 }
 
 @media screen and (max-width: 600px) {
