@@ -1,22 +1,23 @@
 .bookContainer {
-	position: relative;
 	justify-content: center;
 	display: flex;
 }
 .bookWrapper {
-	margin-top: 10rem;
+	position: relative;
+	margin-top: 4rem;
 	height: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	padding: 10px 0;
 	border-radius: 5px;
-	position: absolute;
 	width: 100%;
 	max-width: 1024px;
+	z-index: 99;
 }
 
 .bookItems {
+	width: 33%;
 	min-height: 1.5em;
 	border: 0.05em solid var(--blackColor);
 	display: flex;
@@ -25,30 +26,35 @@
 	padding: 0.5em;
 	border-radius: 0.25em;
 	outline: none;
+	justify-content: center;
 }
 
 .bookItems:focus {
 	border-color: var(--greenColor);
 }
 
-.bookLocation {
+.bookItems:hover {
+	cursor: pointer;
+}
+
+.locationName {
 	flex-grow: 1;
 	width: 33%;
 }
 
-.bookDivider {
+.locationDivider {
 	background-color: var(--blackColor);
 	align-self: stretch;
 	width: 0.05em;
 }
 
-.bookCaret {
+.locationCaret {
 	translate: 0 25%;
 	border: 0.25em solid transparent;
 	border-top-color: var(--blackColor);
 }
 
-.bookList {
+.locationList {
 	list-style: none;
 	display: block;
 	max-height: 10em;
@@ -57,26 +63,31 @@
 	border-radius: 0.25em;
 	width: 33.33%;
 	left: 0;
-	top: calc(100% + 0.25em);
+	top: 50px;
 	position: absolute;
 	background-color: var(--whiteColor);
 	z-index: 100;
+	background-color: var(--whiteColor);
+	color: var(--blackColor);
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
 }
 
-.bookListShow {
+.locationListHide {
 	display: none;
 }
 
-.bookItem {
+.locationItem {
 	padding: 0.25em 0.5em;
 	cursor: pointer;
 }
 
-.bookItem:hover {
+.locationItem:hover {
 	background-color: var(--lightGreenColor);
 }
 
-.bookItemSelected {
+.locationItemSelected {
 	background-color: var(--greenColor);
 	cursor: pointer;
 	color: var(--whiteColor);
@@ -95,6 +106,7 @@
 	border-radius: 5px;
 	-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+	padding: 0.5rem;
 }
 
 .optionItem {
@@ -122,4 +134,48 @@
 
 .optionCounterButton:disabled {
 	cursor: not-allowed;
+}
+
+.optionCounterNumber {
+	width: 1rem;
+}
+
+.mapBox {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	margin: 2rem 0;
+	justify-content: center;
+}
+
+.bookButtonWrapper {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.bookButton {
+	padding: 0.5rem 1rem;
+	white-space: nowrap;
+	border-radius: 7px;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	background-color: var(--blackColor);
+	color: var(--whiteColor);
+}
+
+.bookButton:hover {
+	background-color: var(--greyColor);
+	transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+	.mapBox {
+		width: 95%;
+		height: auto;
+		margin: 0 auto;
+	}
 }

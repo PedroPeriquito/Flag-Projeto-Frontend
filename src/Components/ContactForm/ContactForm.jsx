@@ -41,23 +41,24 @@ const ContactForm = () => {
 					<Form>
 						<div className='form'>
 							<label htmlFor='name'>Name:</label>
-							<Field name='name' type='text' className='formField' value={name} onChange={e => setName(e.target.value)} />
+							<Field name='name' type='text' placeholder='Your name' className='formField' value={name} onChange={e => setName(e.target.value)} />
+
 							{errors.name && <p>{errors.name}</p>}
 						</div>
 
 						<div className='form'>
 							<label htmlFor='email'>Email:</label>
-							<Field name='email' type='email' className='formField' value={email} onChange={e => setEmail(e.target.value)} />
+							<Field name='email' type='email' placeholder='Your email' className='formField' value={email} onChange={e => setEmail(e.target.value)} />
 							{errors.email && <p>{errors.email}</p>}
 						</div>
 						<div className='form'>
 							<label htmlFor='subject'>Subject:</label>
-							<Field name='subject' type='text' className='formField' value={subject} onChange={e => setSubject(e.target.value)} />
+							<Field name='subject' type='text' className='formField' placeholder='Subject' value={subject} onChange={e => setSubject(e.target.value)} />
 							{errors.subject && <p>{errors.subject}</p>}
 						</div>
 						<div className='form'>
 							<label htmlFor='message'>Message:</label>
-							<Field name='message' as='textarea' rows={4} className='formField' value={message} onChange={e => setMessage(e.target.value)} />
+							<Field name='message' as='textarea' rows={4} className='formField' placeholder='Write a message' value={message} onChange={e => setMessage(e.target.value)} />
 							{errors.message && <p>{errors.message}</p>}
 						</div>
 						<button type='submit'>Send Message</button>

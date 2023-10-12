@@ -1,7 +1,11 @@
 import forest from '../../Assets/forestTrip.jpg';
+import forest2 from '../../Assets/forestTrip2.jpg';
 import desert from '../../Assets/desertTrip.jpg';
+import desert2 from '../../Assets/desertTrip2.jpg';
 import canyon from '../../Assets/canyonTrip.jpg';
+import canyon2 from '../../Assets/canyonTrip2.jpg';
 import snow from '../../Assets/snowTrip.jpg';
+import snow2 from '../../Assets/snowTrip2.jpg';
 import user1 from '../../Assets/user1.jpg';
 import user2 from '../../Assets/user2.jpg';
 import user3 from '../../Assets/user3.jpg';
@@ -20,12 +24,12 @@ export const productItems = [
 		detailedPrice: '1050$ for 7 days',
 		images: [
 			{
-				src: desert,
+				src: forest,
 				altText: 'trees-on-forest-at-daytime',
 			},
 			{
-				src: forest,
-				altText: 'trees-on-forest-at-daytime',
+				src: forest2,
+				altText: 'photo-of-crepuscular-rays-through-trees',
 			},
 			{
 				src: forest,
@@ -64,6 +68,9 @@ export const productItems = [
 				comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic adipisci in, eos veniam ut ipsam non doloribus soluta vitae repellendus alias cum! Facilis, voluptatibus.',
 			},
 		],
+
+		lat: 47.86264642276719,
+		long: -82.30606040029959,
 	},
 
 	{
@@ -79,15 +86,15 @@ export const productItems = [
 		images: [
 			{
 				src: desert,
-				altText: 'desert',
+				altText: 'palm-tree-near-white-concrete-building',
+			},
+			{
+				src: desert2,
+				altText: 'derawar-fort-at-sunset',
 			},
 			{
 				src: desert,
-				altText: 'desert',
-			},
-			{
-				src: desert,
-				altText: 'desert',
+				altText: 'palm-tree-near-white-concrete-building',
 			},
 		],
 		reviews: [
@@ -120,6 +127,8 @@ export const productItems = [
 				comment: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum accusantium in velit explicabo iusto error?',
 			},
 		],
+		lat: 23.892013661108212,
+		long: 29.54422277934611,
 	},
 	{
 		title: 'Canyon',
@@ -137,8 +146,8 @@ export const productItems = [
 				altText: 'rock-formation',
 			},
 			{
-				src: canyon,
-				altText: 'rock-formation',
+				src: canyon2,
+				altText: 'monument-valley',
 			},
 			{
 				src: canyon,
@@ -176,6 +185,8 @@ export const productItems = [
 				comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic adipisci in, eos veniam ut ipsam non doloribus soluta vitae repellendus alias cum! Facilis, voluptatibus.',
 			},
 		],
+		lat: 36.10456397903811,
+		long: -112.11083302074132,
 	},
 	{
 		title: 'Snow',
@@ -193,8 +204,8 @@ export const productItems = [
 				altText: 'a-rare-sight-of-moraine-lake-in-winter',
 			},
 			{
-				src: snow,
-				altText: 'a-rare-sight-of-moraine-lake-in-winter',
+				src: snow2,
+				altText: 'landscape-photography-of-snow-pathway-between-trees-during-winter',
 			},
 			{
 				src: snow,
@@ -231,5 +242,7 @@ export const productItems = [
 				comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic adipisci in, eos veniam ut ipsam non doloribus soluta vitae repellendus alias cum! Facilis, voluptatibus.',
 			},
 		],
+		lat: 69.15579097866951,
+		long: 89.19890892094074,
 	},
 ];

@@ -13,11 +13,9 @@
 }
 
 .formField {
-	height: 3rem;
-	padding: 0 1rem;
-	margin-bottom: 2rem;
-	border-radius: 0.3rem;
-	border: 1px solid var(--blackColor);
+	margin: 1rem 0;
+	border: none;
+	border-bottom: 1px solid var(--blackColor);
 }
 
 .formContainer label {
