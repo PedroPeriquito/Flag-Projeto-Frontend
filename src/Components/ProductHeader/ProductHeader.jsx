@@ -33,7 +33,7 @@ const ProductHeader = () => {
 		<div>
 			{productItems.map((item, id) => {
 				return (
-					/* Header */
+					/* ProductHeader */
 					<div className='Container' key={id}>
 						<div className='productContainer'>
 							{openSliderId === id && (

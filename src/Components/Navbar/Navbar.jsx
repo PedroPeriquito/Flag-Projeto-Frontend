@@ -2,6 +2,7 @@ import './Navbar.css';
 import { MenuItems } from '../MenuItems/MenuItems';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import favicon from '../../Assets/favicon32x.png';
 
 const Navbar = () => {
 	const [clicked, setClicked] = useState(false);
@@ -14,7 +15,8 @@ const Navbar = () => {
 		<nav className='navbarItems'>
 			<h1>
 				<Link to='/' className='navHomeLink'>
-					<i className='fa-solid fa-leaf'></i>Nature Adventure
+					<img src={favicon} alt='leaf' />
+					Nature Adventure
 				</Link>
 			</h1>
 			<div className='menuIcons' onClick={handleClick}>

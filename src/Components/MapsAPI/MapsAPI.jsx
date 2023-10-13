@@ -22,13 +22,15 @@ function MapsAPI({ index }) {
 		}
 	}, [index]);
 
+	const apiKey = process.env.REACT_APP_API_KEY;
+
 	return (
 		<>
 			<Map
 				{...viewState}
 				reuseMaps
 				mapStyle='mapbox://styles/xgant/clnkeipwu001601qw7oai3a93'
-				mapboxAccessToken='pk.eyJ1IjoieGdhbnQiLCJhIjoiY2xua2hqMXd2MXZicTJtcnV5aGRnd2R6MCJ9.yLWhuhghNpXgGxKgYBjxiQ'
+				mapboxAccessToken={apiKey}
 				initialViewState={viewState}
 				onMove={e => setViewState(e.viewState)}
 				style={{ width: 600, height: 400 }}

@@ -15,7 +15,7 @@ export const sliderData = [
 		title: 'Desert',
 		text: 'The endless sands',
 		img: desert,
-		imgText: 'desert',
+		imgText: 'palm-tree-near-white-concrete-building',
 	},
 
 	{

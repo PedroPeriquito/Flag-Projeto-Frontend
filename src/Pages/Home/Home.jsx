@@ -3,6 +3,7 @@ import './Home.css';
 import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
 import Slider from '../../Components/Slider/Slider';
+import SwiperComponent from '../../Components/Swiper/Swiper';
 
 import HomeHero from '../../Assets/homeHero.jpg';
 
@@ -19,7 +20,7 @@ const Home = () => {
 				url='/destinations'
 				btnClass='show'
 			/>
-			<Slider />
+			<SwiperComponent />
 			<About />
 		</>
 	);
