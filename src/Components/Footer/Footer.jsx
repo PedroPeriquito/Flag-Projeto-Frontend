@@ -6,7 +6,9 @@ const Footer = () => {
 		<div className='footer'>
 			<div className='footerLeft'>
 				<h4>
-					<i>©</i>Nature Adventure
+					<i>©</i>
+					<p>2023</p>
+					Nature Adventure
 				</h4>
 				<ul className='footerLinks'>
 					<Link to='Privacidade' className='footerLink'>

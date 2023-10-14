@@ -14,7 +14,7 @@
 
 .icon {
 	font-size: 3rem;
-	color: var(--greenColor);
+	color: var(--themeColor);
 }
 
 .sectionCenter {
@@ -54,14 +54,14 @@
 	max-width: 700px;
 	max-height: 350px;
 	object-fit: cover;
-	border: 3px solid var(--greenColor);
+	border: 3px solid var(--themeColor);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
 }
 
 .article h4 {
 	text-transform: uppercase;
-	color: var(--greenColor);
+	color: var(--themeColor);
 	margin: 1rem 0;
 }
 
@@ -107,7 +107,7 @@
 
 .prev:hover,
 .next:hover {
-	background-color: var(--greenColor);
+	background-color: var(--themeColor);
 }
 
 .prev {

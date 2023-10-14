@@ -7,10 +7,15 @@ import Contacts from './Pages/Contacts/Contacts';
 import NotFound from './Pages/NotFound/NotFound';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+import { useContext } from 'react';
+import { ThemeContext } from './Components/ChangeMode/ChangeMode';
 
 export default function App() {
+	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
-		<div className='App'>
+		<div className={`App ${theme === 'canyon' ? 'canyon-theme' : 'forest-theme'}`}>
+			<div>Its'a {theme}theme</div>
+			<button onClick={toggleTheme}>toggleTheme</button>
 			<Navbar />
 			<Routes>
 				<Route path='/' element={<Home />} />

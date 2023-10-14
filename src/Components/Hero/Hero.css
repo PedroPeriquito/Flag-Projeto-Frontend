@@ -52,7 +52,7 @@
 	font-weight: bold;
 	letter-spacing: 2px;
 	color: var(--whiteColor);
-	background-color: var(--blackColor);
+	background-color: var(--themeColor);
 }
 
 .heroText .hide {

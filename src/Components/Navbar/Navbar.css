@@ -17,7 +17,7 @@
 
 .navHomeLink {
 	text-decoration: none;
-	color: var(--greenColor);
+	color: var(--themeColor);
 	font-size: 1.5rem;
 	cursor: pointer;
 	display: flex;
@@ -51,7 +51,7 @@
 	white-space: nowrap;
 }
 .navLinks p:hover {
-	background-color: var(--greenColor);
+	background-color: var(--themeColor);
 	color: var(--whiteColor);
 	border-radius: 4px;
 	transition: all 0.2s ease-in-out;
@@ -121,7 +121,7 @@
 	}
 
 	.navLinks:hover {
-		background-color: var(--greenColor);
+		background-color: var(--themeColor);
 		transition: none;
 	}
 
@@ -136,7 +136,7 @@
 		margin: auto;
 		border-radius: 4px;
 		width: 60%;
-		background: var(--greenColor);
+		background: var(--themeColor);
 		text-decoration: none;
 		color: var(--whiteColor);
 		font-size: 1.2rem;

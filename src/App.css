@@ -23,19 +23,27 @@ img {
 	--blackColor: rgb(3, 3, 3);
 	--whiteColor: rgb(248, 248, 248);
 	--greyColor: rgb(71, 71, 71);
-	--greenColor: rgb(35, 114, 4);
 	--lightGreyColor: rgb(230, 224, 224);
-	--lightGreenColor: rgb(124, 194, 129);
 	--textGreyColor: rgb(87, 87, 87);
 }
 
-@media screen and (max-width: 600px) {
+.canyon-theme {
+	--themeColor: rgb(110, 53, 0);
+	--secThemeColor: rgb(194, 156, 124);
+}
+
+.forest-theme {
+	--themeColor: rgb(35, 114, 4);
+	--secThemeColor: rgb(124, 194, 129);
+}
+
+@media screen and (max-width: 650px) {
 	html {
 		font-size: 14px;
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
 	html {
 		font-size: 12px;
 	}

@@ -2,6 +2,10 @@ import forest from '../../Assets/forestTrip.jpg';
 import desert from '../../Assets/desertTrip.jpg';
 import canyon from '../../Assets/canyonTrip.jpg';
 import snow from '../../Assets/snowTrip.jpg';
+import snow2 from '../../Assets/snowTrip2.jpg';
+import forest2 from '../../Assets/forestTrip2.jpg';
+import canyon2 from '../../Assets/canyonTrip2.jpg';
+import desert2 from '../../Assets/desertTrip2.jpg';
 
 export const sliderData = [
 	{
@@ -30,5 +34,22 @@ export const sliderData = [
 		text: 'The endless snow',
 		img: snow,
 		imgText: 'a-rare-sight-of-moraine-lake-in-winter',
+	},
+
+	{
+		img: snow2,
+		imgText: 'a-rare-sight-of-moraine-lake-in-winter',
+	},
+	{
+		img: canyon2,
+		imgText: 'rock-formation',
+	},
+	{
+		img: desert2,
+		imgText: 'palm-tree-near-white-concrete-building',
+	},
+	{
+		img: forest2,
+		imgText: 'trees-on-forest-at-daytime',
 	},
 ];

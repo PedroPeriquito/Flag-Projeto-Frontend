@@ -30,7 +30,7 @@
 }
 
 .bookItems:focus {
-	border-color: var(--greenColor);
+	border-color: var(--themeColor);
 }
 
 .bookItems:hover {
@@ -84,11 +84,11 @@
 }
 
 .locationItem:hover {
-	background-color: var(--lightGreenColor);
+	background-color: var(--secThemeColor);
 }
 
 .locationItemSelected {
-	background-color: var(--greenColor);
+	background-color: var(--themeColor);
 	cursor: pointer;
 	color: var(--whiteColor);
 }
@@ -126,7 +126,7 @@
 .optionCounterButton {
 	width: 30px;
 	height: 30px;
-	border: 1px solid var(--greenColor);
+	border: 1px solid var(--themeColor);
 	color: var(--blackColor);
 	cursor: pointer;
 	background-color: transparent;
