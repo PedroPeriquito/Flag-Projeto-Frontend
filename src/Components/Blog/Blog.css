@@ -1,7 +1,7 @@
 .blog {
 	margin: 50px 0;
 	text-align: left;
-	padding: 5rem 9rem 3rem 9rem;
+	padding: 3rem 9rem 3rem 9rem;
 }
 
 .container {
@@ -9,23 +9,22 @@
 	width: 100%;
 }
 
-.blog__header {
+.blogWrapper {
 	margin-bottom: 40px;
-	margin-left: 20px;
 }
 
-.blog__header h2 {
+.blogWrapper h2 {
 	font-size: 2.5rem;
 	color: var(--greyColor);
 }
 
-.blog__header p {
+.blogWrapper p {
 	font-size: 1.2rem;
 	color: var(--textGreyColor);
 	margin-top: 10px;
 }
 
-.blog__btn.post {
+.blogBtn.post {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 10px 20px;
@@ -51,33 +50,33 @@
 	margin-left: 20px;
 }
 
-.blog__btn:hover {
+.blogBtn:hover {
 	cursor: pointer;
 	background-color: var(--secThemeColor);
 }
 
-.blog__posts {
+.blogPosts {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
 }
 
-.blog__post {
-	background-color: var(--whiteColor);
+.blogPost {
+	background-color: var(--lightGreyColor);
 	padding: 20px;
-	margin: 20px;
+	margin: 20px 0;
 	border-radius: 8px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	width: 100%;
 }
 
-.blog__post h3 {
+.blogPost h3 {
 	font-size: 24px;
 	color: var(--greyColor);
 	margin-bottom: 10px;
 }
 
-.blog__post p {
+.blogPost p {
 	color: var(--textGreyColor);
 	font-size: 16px;
 	line-height: 1.5;
@@ -86,4 +85,16 @@
 
 .pagination {
 	margin-top: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+	.blog {
+		padding: 4rem 4rem 3rem 4rem;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.blog {
+		padding: 2rem 1rem 3rem 1rem;
+	}
 }

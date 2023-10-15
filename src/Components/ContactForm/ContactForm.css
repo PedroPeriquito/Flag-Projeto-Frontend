@@ -8,14 +8,15 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
-	margin: auto;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .formField {
 	margin: 1rem 0;
 	border: none;
 	border-bottom: 1px solid var(--blackColor);
+	background-color: var(--whiteColor);
 }
 
 .formContainer label {
@@ -23,7 +24,6 @@
 }
 
 .formContainer textarea {
-	padding: 0.5rem;
 	border-radius: 0.3rem;
 	border: 1px solid var(--blackColor);
 	height: 8rem;
@@ -47,13 +47,30 @@
 	transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1050px) {
+	.formContainer {
+		margin: 4rem 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form {
+		width: 80%;
+	}
+
+	.formContainer form {
+		width: 90%;
+		padding-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 750px) {
 	.formContainer {
 		margin: 4rem 2rem;
 	}
 
-	.formContainer form {
-		padding-top: 2rem;
-		width: 90%;
+	.form {
+		width: 100%;
 	}
 }

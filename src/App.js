@@ -13,14 +13,11 @@ import CreatePost from './api/CreatePost';
 import UpdatePost from './api/UpdatePost';
 import DeletePost from './api/DeletePost';
 
-
 export default function App() {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	return (
-		<div className={`App ${theme === 'canyon' ? 'canyon-theme' : 'forest-theme'}`}>
-			<div>Its'a {theme}theme</div>
-			<button onClick={toggleTheme}>toggleTheme</button>
-			<Navbar />
+		<div className={`App ${theme === 'canyon' ? 'canyon-theme' : theme === 'desert' ? 'desert-theme' : theme === 'snow' ? 'snow-theme' : 'forest-theme'}`}>
+			<Navbar toggleTheme={toggleTheme} />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/destinations' element={<Destinations />} />

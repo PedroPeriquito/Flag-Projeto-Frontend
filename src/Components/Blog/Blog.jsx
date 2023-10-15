@@ -38,22 +38,22 @@ const Home = () => {
 	return (
 		<section id='blog' className='blog'>
 			<div className='container'>
-				<div className='blog__wrapper'>
-					<div className='blog__header'>
+				<div className='blogWrapper'>
+					<div className='blogHeader'>
 						<h2>Updates</h2>
 						<p>All the latest updates</p>
 						<p>
-							<Link to={`/create`} className='blog__btn post'>
+							<Link to={`/create`} className='blogBtn post'>
 								New Post
 							</Link>
 						</p>
 					</div>
 
-					<div className='blog__posts'>
+					<div className='blogPosts'>
 						{error && <h4>{error.message}</h4>}
 
 						{currentPosts.map(post => (
-							<article className='blog__post' key={post.id}>
+							<article className='blogPost' key={post.id}>
 								<h3>
 									{post.id} - {post.title}
 								</h3>

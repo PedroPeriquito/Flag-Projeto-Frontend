@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import favicon from '../../Assets/favicon32x.png';
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme }) => {
 	const [clicked, setClicked] = useState(false);
 
 	const handleClick = () => {
@@ -30,7 +30,10 @@ const Navbar = () => {
 						</Link>
 					</li>
 				))}
-				<button className='navbtn'>Sign Up</button>
+				<button className='navBtn'>Sign Up</button>
+				<button className='toggleBtn' onClick={toggleTheme}>
+					Toggle <p>Theme</p>
+				</button>
 			</ul>
 		</nav>
 	);

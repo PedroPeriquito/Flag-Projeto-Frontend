@@ -28,7 +28,7 @@
 .pagination button[disabled],
 .pagination button[disabled]:hover,
 .pagination span[disabled] {
-	background-color: var(--whiteColor);
+	background-color: var(--lightGreyColor);
 	color: var(--textGreyColor);
 	cursor: not-allowed;
 }

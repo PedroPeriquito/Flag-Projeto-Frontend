@@ -7,7 +7,20 @@ export const ThemeProvider = ({ children }) => {
 	const [theme, setTheme] = useState('forest');
 
 	const toggleTheme = () => {
-		setTheme(theme === 'forest' ? 'canyon' : 'forest');
+		setTheme(prevTheme => {
+			switch (prevTheme) {
+				case 'forest':
+					return 'canyon';
+				case 'canyon':
+					return 'snow';
+				case 'snow':
+					return 'desert';
+				case 'desert':
+					return 'forest';
+				default:
+					return 'forest';
+			}
+		});
 	};
 
 	return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;

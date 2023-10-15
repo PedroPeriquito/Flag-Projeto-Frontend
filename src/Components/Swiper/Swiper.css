@@ -1,7 +1,16 @@
 .swiper {
-	width: 72%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.swiperWrapper {
 	padding-top: 5rem;
 	padding-bottom: 2rem;
+	max-width: 1024px;
+}
+.swiperWrapper h2 {
+	margin-bottom: 2rem;
 }
 
 .swiper-slide {
@@ -10,6 +19,8 @@
 	width: 350px;
 	height: 450px;
 	cursor: pointer;
+	border-radius: 10%;
+	margin-bottom: 3rem;
 }
 
 .swiper-slide img {
@@ -17,4 +28,22 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 10%;
+}
+
+@media screen and (max-width: 1100px) {
+	.swiperWrapper {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 250px;
+		height: 350px;
+		cursor: pointer;
+		border-radius: 10%;
+		margin-bottom: 3rem;
+	}
 }

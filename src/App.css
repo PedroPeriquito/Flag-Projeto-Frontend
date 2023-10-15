@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-	/* 	border: 1px solid red; */
+	border: 1px solid red;
 }
 
 .App {
@@ -13,6 +13,7 @@
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	background-color: var(--whiteColor);
 }
 
 img {
@@ -37,6 +38,15 @@ img {
 	--secThemeColor: rgb(124, 194, 129);
 }
 
+.desert-theme {
+	--themeColor: rgb(163, 125, 0);
+	--secThemeColor: rgb(220, 224, 155);
+}
+
+.snow-theme {
+	--themeColor: rgb(2, 57, 88);
+	--secThemeColor: rgb(101, 175, 209);
+}
 @media screen and (max-width: 650px) {
 	html {
 		font-size: 14px;
