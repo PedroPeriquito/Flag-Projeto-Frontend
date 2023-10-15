@@ -1,0 +1,29 @@
+{
+  "updates": [
+    {
+      "id": 1,
+      "title": "Introdução ao React",
+      "body": "Aprenda os fundamentos do React, uma das bibliotecas JavaScript mais populares para construção de interfaces."
+    },
+    {
+      "title": "Componentes em React",
+      "body": "eficientes.",
+      "id": 2
+    },
+    {
+      "title": "dasd",
+      "body": "asdas",
+      "id": 4
+    },
+    {
+      "title": "asda",
+      "body": "asdasd",
+      "id": 5
+    },
+    {
+      "title": "asd",
+      "body": "das",
+      "id": 6
+    }
+  ]
+}

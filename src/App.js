@@ -9,6 +9,10 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import { useContext } from 'react';
 import { ThemeContext } from './Components/ChangeMode/ChangeMode';
+import CreatePost from './api/CreatePost';
+import UpdatePost from './api/UpdatePost';
+import DeletePost from './api/DeletePost';
+
 
 export default function App() {
 	const { theme, toggleTheme } = useContext(ThemeContext);
@@ -21,7 +25,10 @@ export default function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/destinations' element={<Destinations />} />
 				<Route path='/booking' element={<Booking />} />
-				<Route path='/contacts' element={<Contacts />} />
+				<Route path='/contactUs' element={<Contacts />} />
+				<Route path='/create' element={<CreatePost />} />
+				<Route path='/update/:id' element={<UpdatePost />} />
+				<Route path='/delete/:id' element={<DeletePost />} />
 				<Route path='/*' element={<NotFound />} />
 			</Routes>
 			<Footer />

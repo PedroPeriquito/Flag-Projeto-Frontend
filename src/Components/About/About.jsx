@@ -8,12 +8,12 @@ const About = () => {
 	return (
 		<section className='about'>
 			<div className='row'>
-				<div className='column'>
+				<div className='column left'>
 					<div className='aboutImg'>
 						<img src={aboutImg1} alt='' />
 					</div>
 				</div>
-				<div className='column'>
+				<div className='column right'>
 					<div className='tabs'>
 						<div className={toggleTab === 1 ? 'singleTab singleTabShow' : 'singleTab'} onClick={() => setToggleTab(1)}>
 							<h2>About</h2>

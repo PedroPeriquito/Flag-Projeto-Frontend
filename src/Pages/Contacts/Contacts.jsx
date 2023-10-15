@@ -6,7 +6,7 @@ import ContactForm from '../../Components/ContactForm/ContactForm';
 const Contacts = () => {
 	return (
 		<>
-			<Hero cName='heroMid' heroImgSrc={ContactsHero} heroImgText='person-holding-world-globe-facing-mountain' title='Contacts' btnClass='hide' />
+			<Hero cName='heroMid' heroImgSrc={ContactsHero} heroImgText='person-holding-world-globe-facing-mountain' title='Contacts Us' btnClass='hide' />
 			<ContactForm />
 		</>
 	);

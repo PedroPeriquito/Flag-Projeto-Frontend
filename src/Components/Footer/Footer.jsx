@@ -11,11 +11,11 @@ const Footer = () => {
 					Nature Adventure
 				</h4>
 				<ul className='footerLinks'>
-					<Link to='Privacidade' className='footerLink'>
-						<li>Privacidade</li>
+					<Link to='Privacy' className='footerLink'>
+						<li>Privacy</li>
 					</Link>
-					<Link to='Termos' className='footerLink'>
-						<li>Termos</li>
+					<Link to='Terms' className='footerLink'>
+						<li>Terms</li>
 					</Link>
 					<Link to='Support' className='footerLink'>
 						<li>Support</li>

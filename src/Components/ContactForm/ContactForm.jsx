@@ -3,10 +3,10 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 
 const FormSchema = yup.object().shape({
-	name: yup.string().required(),
-	email: yup.string().email().required(),
-	subject: yup.string().required(),
-	message: yup.string().required().max(300),
+	name: yup.string().required().max(50),
+	email: yup.string().email().required().max(50),
+	subject: yup.string().required().max(50),
+	message: yup.string().required().max(150),
 });
 
 const ContactForm = () => {
@@ -14,6 +14,7 @@ const ContactForm = () => {
 		console.log(values);
 
 		resetForm();
+		alert('Message sent!');
 	};
 	return (
 		<div className='formContainer'>

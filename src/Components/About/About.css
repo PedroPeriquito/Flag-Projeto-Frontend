@@ -1,19 +1,24 @@
 .about {
-	padding: 5rem 3rem 3rem 3rem;
+	padding: 5rem 9rem 3rem 9rem;
 }
 
 .row {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .column {
 	background-color: var(--lightGreyColor);
 	border-radius: 14px;
+	text-align: left;
+}
+
+.column.right {
+	padding: 0 2rem;
 }
 
 .row .column {
-	width: 40%;
+	width: 45%;
 }
 
 .column .tabs {
@@ -83,18 +88,18 @@
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 1.4;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .content h3 {
 	font-size: 1.5rem;
 	font-weight: 600;
 	line-height: 1.4;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .content p {
-	padding-bottom: 1rem;
+	padding-bottom: 1.5rem;
 	font-size: 1rem;
 	line-height: 1.8;
 	font-weight: 400;
