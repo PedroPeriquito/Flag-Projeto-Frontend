@@ -1,3 +1,4 @@
+// Import necessary dependencies and components from React and other modules
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
@@ -14,7 +15,10 @@ import UpdatePost from './api/UpdatePost';
 import DeletePost from './api/DeletePost';
 
 export default function App() {
+	// Access theme and toggleTheme function from ThemeContext using useContext hook
 	const { theme, toggleTheme } = useContext(ThemeContext);
+
+	// Return the JSX for the App component
 	return (
 		<div className={`App ${theme === 'canyon' ? 'canyon-theme' : theme === 'desert' ? 'desert-theme' : theme === 'snow' ? 'snow-theme' : 'forest-theme'}`}>
 			<Navbar toggleTheme={toggleTheme} />

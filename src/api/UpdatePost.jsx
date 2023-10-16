@@ -4,61 +4,72 @@ import { useBlog } from '../Components/Blog/useBlog';
 import Blog from '../Components/Blog/BlogPost';
 
 const UpdatePost = () => {
+	// Extracting the post ID from the URL params using React Router's useParams hook
 	const { id: postId } = useParams();
 	const id = Number(postId);
+
+	// React Router hook for navigation
 	const navigate = useNavigate();
+
+	// Custom hook for managing blog state
 	const { dispatch } = useBlog();
 
+	// State variables for the updated post title and body
 	const [title, setTitle] = useState('');
 	const [body, setBody] = useState('');
 
+	// Fetch the post data when the component is mounted
 	useEffect(() => {
 		const fetchPost = async () => {
 			try {
+				// Making a GET request to fetch details of the specific post
 				const response = await fetch(`http://localhost:5000/updates/${id}`);
 				const post = await response.json();
 
+				// Setting the fetched post title and body to the state
 				setTitle(post.title);
 				setBody(post.body);
 			} catch (error) {
-				console.error('Erro ao buscar post:', error);
+				console.error('Error fetching post:', error);
 			}
 		};
 
-		fetchPost();
+		fetchPost(); // Call the fetchPost function when the component is mounted
 	}, [id]);
 
+	// Function to handle post update
 	const handleSubmit = async e => {
 		e.preventDefault();
 
 		try {
+			// Making a PUT request to update the specific post
 			const response = await fetch(`http://localhost:5000/updates/${id}`, {
 				method: 'PUT',
 				headers: {
 					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify({ title, body }),
+				body: JSON.stringify({ title, body }), // Sending updated title and body in the request body
 			});
 
+			// Parsing the response data as JSON
 			const updatedPost = await response.json();
 
+			// Dispatching an action to update the blog state with the updated post
 			dispatch({ type: 'UPDATE_POST', payload: updatedPost });
 
-			// Redirecionar para a página principal ou mostrar mensagem de sucesso
-			alert('post atualizado');
+			// Alerting the user that the post has been updated
+			alert('Post updated');
+
+			// Navigating the user back to the home page after updating the post
 			navigate('/');
 		} catch (error) {
-			console.error('Erro ao atualizar post:', error);
+			// Handling errors if post update fails
+			console.error('Error updating post:', error);
 		}
 	};
 
+	// Render the Blog component with post details and update functionality
 	return <Blog action='update' id={id} title={title} body={body} onTitleChange={setTitle} onBodyChange={setBody} onSubmit={handleSubmit} />;
 };
 
 export default UpdatePost;
-
-/* Neste exemplo, foi adicionado o uso do contexto de post, que foi importado através do usePosts do PostContext. A função usePosts retorna o estado posts e a função dispatch do contexto. O estado posts contém todos os posts, e a função dispatch é usada para enviar a ação de atualização para o reducer.
-
-No useEffect, verificamos se o post já está presente no estado posts do contexto. Se estiver presente, pegamos os dados do post diretamente do estado. Caso contrário, fazemos uma chamada para buscar o post no servidor.
-
-Após a atualização do post, chamamos a função dispatch com a ação UPDATE_POST e o post atualizado como payload. Isso atualiza o estado posts no contexto. */

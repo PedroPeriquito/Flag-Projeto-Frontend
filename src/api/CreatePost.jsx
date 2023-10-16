@@ -1,51 +1,56 @@
-// eslint-disable-next-line react/prop-types
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useBlog } from '../Components/Blog/useBlog';
 import Blog from '../Components/Blog/BlogPost';
 
 const CreatePost = () => {
+	// State variables for title and body of the new blog post
 	const [title, setTitle] = useState('');
 	const [body, setBody] = useState('');
+
+	// React Router hook for navigation
 	const navigate = useNavigate();
+
+	// Custom hook for managing blog state
 	const { dispatch } = useBlog();
 
+	// Function to handle form submission
 	const handleSubmit = async e => {
 		e.preventDefault();
 		try {
+			// Making a POST request to create a new blog post
 			const response = await fetch('http://localhost:5000/updates', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify({ title, body }),
+				body: JSON.stringify({ title, body }), // Sending title and body in the request body
 			});
 
+			// Parsing the response data as JSON
 			const data = await response.json();
 			console.log(data);
 
+			// Dispatching an action to update the blog state with the new post
 			dispatch({ type: 'CREATE_POST', payload: data });
 
-			// Redirecionar para a página principal ou mostrar mensagem de sucesso
-			alert('novo post criado');
+			// Alerting the user that a new post has been created
+			alert('New post created');
+
+			// Navigating the user back to the home page after creating the post
 			navigate('/');
 		} catch (error) {
-			console.error('Erro ao criar post:', error);
+			// Handling errors if the post creation fails
+			console.error('Error creating post:', error);
 		}
 	};
 
 	return (
 		<>
+			{/* Rendering the Blog component with form fields and event handlers */}
 			<Blog action='create' id={null} title={title} body={body} onTitleChange={setTitle} onBodyChange={setBody} onSubmit={handleSubmit} />
 		</>
 	);
 };
 
 export default CreatePost;
-
-/* Neste exemplo, adicionamos o uso do contexto de post, importado através do usePosts do PostContext. A função usePosts retorna a função dispatch do contexto.
-
-No método handleSubmit, após criar o novo post no servidor, adicionamos o novo post ao estado posts do contexto através da ação ADD_POST e o payload data, que contém os detalhes do novo post.
-
-Em seguida, chamamos a função dispatch com a ação ADD_POST e o payload data. Isso atualiza o estado posts no contexto. */
