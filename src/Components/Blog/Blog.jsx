@@ -54,10 +54,9 @@ const Home = () => {
 
 						{currentPosts.map(post => (
 							<article className='blogPost' key={post.id}>
-								<h3>
-									{post.id} - {post.title}
-								</h3>
+								<h3>{post.title}</h3>
 								<p>{post.body}</p>
+								<p className='blogDate'>{new Date(post.date).toLocaleDateString('en-GB')}</p>
 								<Link to={`/update/${post.id}`} className='blogLink update'>
 									<i class='fa-regular fa-pen-to-square'></i>Update
 								</Link>

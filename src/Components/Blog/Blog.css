@@ -63,11 +63,12 @@
 
 .blogPost {
 	background-color: var(--lightGreyColor);
-	padding: 20px;
+	padding: 20px 20px;
 	margin: 20px 0;
 	border-radius: 8px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	width: 100%;
+	position: relative;
 }
 
 .blogPost h3 {
@@ -85,6 +86,14 @@
 
 .pagination {
 	margin-top: 30px;
+}
+
+.blogDate {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 0.8em;
+	margin-right: 20px;
 }
 
 @media screen and (max-width: 1250px) {

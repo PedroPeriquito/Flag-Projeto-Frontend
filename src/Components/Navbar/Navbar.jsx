@@ -1,5 +1,5 @@
 import './Navbar.css';
-import { MenuItems } from '../MenuItems/MenuItems';
+import { MenuItems } from './MenuItems';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import favicon from '../../Assets/favicon32x.png';
