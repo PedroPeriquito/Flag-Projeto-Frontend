@@ -3,6 +3,7 @@ import aboutImg1 from '../../Assets/aboutImg1.jpg';
 import { useState } from 'react';
 
 const About = () => {
+	// State variable to toggle between tabs (About, Origin, Vision)
 	const [toggleTab, setToggleTab] = useState(1);
 
 	return (
@@ -13,8 +14,11 @@ const About = () => {
 						<img src={aboutImg1} alt='' />
 					</div>
 				</div>
+
+				{/* Right column containing the tabs and tab content */}
 				<div className='column right'>
 					<div className='tabs'>
+						{/* Tabs for About, Origin, and Vision */}
 						<div className={toggleTab === 1 ? 'singleTab singleTabShow' : 'singleTab'} onClick={() => setToggleTab(1)}>
 							<h2>About</h2>
 						</div>
@@ -25,6 +29,7 @@ const About = () => {
 							<h2>Vision</h2>
 						</div>
 					</div>
+					{/* Content based on the selected tab */}
 					<div className='tabContent'>
 						<div className={toggleTab === 1 ? 'content contentShow' : 'content'}>
 							{/* About content */}

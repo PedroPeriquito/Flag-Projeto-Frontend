@@ -5,25 +5,28 @@ import './Blog.css';
 import Pagination from './BlogPages';
 
 const Home = () => {
-	const [posts, setPosts] = useState([]);
-	const [error, setError] = useState(null);
+	// State variables
+	const [posts, setPosts] = useState([]); // Stores the list of posts
+	const [error, setError] = useState(null); // Stores any error that occurs during API call
 
-	const [currentPage, setCurrentPage] = useState(1);
-	const [postsPerPage] = useState(4);
+	const [currentPage, setCurrentPage] = useState(1); // Stores the current page number
+	const [postsPerPage] = useState(4); // Number of posts to display per page
 
+	// Function to update the current page
 	const paginate = pageNumber => setCurrentPage(pageNumber);
 
+	// Fetch posts from the API when the component mounts
 	useEffect(() => {
 		const fetchPosts = async () => {
 			try {
 				const response = await fetch('http://localhost:5000/updates');
 
 				if (!response.ok) {
-					throw new Error('Network response foi nos piriquitos :(');
+					throw new Error('Network response failed :(');
 				}
 
 				const data = await response.json();
-				const sortedData = data.sort((a, b) => b.id - a.id); // Ordena os posts por ID de maneira decrescente
+				const sortedData = data.sort((a, b) => b.id - a.id);
 				setPosts(sortedData);
 			} catch (error) {
 				setError(error);
@@ -33,6 +36,7 @@ const Home = () => {
 		fetchPosts();
 	}, []);
 
+	// Get the current posts based on the current page
 	const currentPosts = posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
 
 	return (

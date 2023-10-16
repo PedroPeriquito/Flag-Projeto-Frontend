@@ -9,39 +9,40 @@ import MapsAPI from '../../Components/MapsAPI/MapsAPI';
 
 const Book = () => {
 	/******************* LOCATION **************** */
-	const [location, setLocation] = useState('Location');
-	const [selectedItem, setSelectedItem] = useState(null);
-	const [isOpen, setIsOpen] = useState(false);
+	const [location, setLocation] = useState('Location'); // State variable for selected location
+	const [selectedItem, setSelectedItem] = useState(null); // State variable to track selected location index
+	const [isOpen, setIsOpen] = useState(false); // State variable for location dropdown visibility
 
 	const handleItemClick = (item, itemIndex) => {
-		setLocation(item.title);
-		setSelectedItem(itemIndex);
-		setIsOpen(false);
+		setLocation(item.title); // Set selected location
+		setSelectedItem(itemIndex); // Set selected location index
+		setIsOpen(false); // Close location dropdown
 	};
 
 	/*********************  CALENDAR  ************************ */
-	const [openDate, setOpenDate] = useState(false);
+	const [openDate, setOpenDate] = useState(false); // State variable for calendar visibility
 	const [date, setDate] = useState([
 		{
 			startDate: new Date(),
 			endDate: new Date(),
 			key: 'selection',
 		},
-	]);
-	/**************************  OPTIONS  ********************* */
+	]); // State variable for selected date range
 
-	const [openOptions, setOpenOptions] = useState(false);
+	/**************************  OPTIONS  ********************* */
+	const [openOptions, setOpenOptions] = useState(false); // State variable for options visibility
 	const [options, setOptions] = useState({
-		adult: 1,
-		children: 0,
-		room: 1,
+		adult: 1, // Number of adults
+		children: 0, // Number of children
+		room: 1, // Number of rooms
 	});
 
 	const handleOption = (name, operation) => {
+		// Function to handle option changes (increment/decrement)
 		setOptions(prev => {
 			return {
 				...prev,
-				[name]: operation === 'i' ? options[name] + 1 : options[name] - 1,
+				[name]: operation === 'i' ? options[name] + 1 : options[name] - 1, // Increment or decrement the selected option
 			};
 		});
 	};
@@ -50,6 +51,7 @@ const Book = () => {
 		<>
 			<div className='bookContainer'>
 				<div className='bookWrapper'>
+					{/* Location Dropdown */}
 					<div onBlur={() => setIsOpen(false)} onClick={() => setIsOpen(!isOpen)} tabIndex={0} className='bookItems'>
 						<span className='locationName'>{location}</span>
 						<div className='locationDivider'></div>
@@ -62,12 +64,15 @@ const Book = () => {
 							))}
 						</ul>
 					</div>
+
+					{/* Date Range Picker */}
 					<div className='bookItems'>
 						<i onClick={() => setOpenDate(!openDate)} className='fa-solid fa-calendar-days'></i>
 						<span onClick={() => setOpenDate(!openDate)}>{`${format(date[0].startDate, 'dd/MM/yyyy')} to ${format(date[0].endDate, 'dd/MM/yyyy')}`} </span>
 						{openDate && <DateRange editableDateInputs={true} onChange={item => setDate([item.selection])} moveRangeOnFirstSelection={false} ranges={date} className='date' />}
 					</div>
 
+					{/* Options (Adults, Children, Rooms) */}
 					<div className='bookItems'>
 						<i className='fa-solid fa-person' onClick={() => setOpenOptions(!openOptions)}></i>
 						<span onClick={() => setOpenOptions(!openOptions)}>
@@ -75,6 +80,7 @@ const Book = () => {
 						</span>
 						{openOptions && (
 							<div className='options'>
+								{/* Adult Option */}
 								<div className='optionItem'>
 									<span className='optiontext'>Adult</span>
 									<div className='optionCounter'>
@@ -87,6 +93,8 @@ const Book = () => {
 										</button>
 									</div>
 								</div>
+
+								{/* Children Option */}
 								<div className='optionItem'>
 									<span className='optiontext'>Children</span>
 									<div className='optionCounter'>
@@ -99,6 +107,8 @@ const Book = () => {
 										</button>
 									</div>
 								</div>
+
+								{/* Room Option */}
 								<div className='optionItem'>
 									<span className='optiontext'>Room</span>
 									<div className='optionCounter'>
@@ -116,10 +126,13 @@ const Book = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* Map Display */}
 			<div className='mapBox'>
 				<MapsAPI index={selectedItem} />
 			</div>
 
+			{/* Book Button */}
 			<div className='bookButtonWrapper'>
 				<button className='bookButton'>Book</button>
 			</div>

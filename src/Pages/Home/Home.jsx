@@ -2,7 +2,7 @@ import './Home.css';
 
 import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
-import Slider from '../../Components/Slider/Slider';
+
 import SwiperComponent from '../../Components/Swiper/Swiper';
 import Blog from '../../Components/Blog/Blog';
 

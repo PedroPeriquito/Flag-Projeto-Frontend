@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Swiper.css';
-import { sliderData } from '../Slider/SliderData';
+import { sliderData } from '../Swiper/SliderData';
 import { Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Slider.css';
-import { sliderData } from '../Slider/SliderData';
+import { sliderData } from './Swiper/SliderData';
 
 const Slider = () => {
 	const [location] = useState(sliderData);
