@@ -58,7 +58,7 @@ const Home = () => {
 								<p>{post.body}</p>
 								<p className='blogDate'>{new Date(post.date).toLocaleDateString('en-GB')}</p>
 								<Link to={`/update/${post.id}`} className='blogLink update'>
-									<i class='fa-regular fa-pen-to-square'></i>Update
+									<i class='fa-regular fa-pen-to-square'></i>Edit
 								</Link>
 								<Link to={`/delete/${post.id}`} className='blogLink delete'>
 									<i class='fa-solid fa-trash-can'></i>Delete

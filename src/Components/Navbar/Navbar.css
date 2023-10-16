@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 950px) {
 	.navbarItems {
-		z-index: 99;
+		z-index: 199;
 	}
 
 	.navMenu {
@@ -115,10 +115,11 @@
 		left: 0;
 		opacity: 0;
 		align-items: stretch;
-		padding: 80px 0 30px 0;
+		padding: 80px 0 10px 0;
 		margin: 0;
 		transition: 0.3s ease-in-out;
 		border-radius: 13px;
+		box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 	}
 
 	.navMenu.active {
@@ -132,7 +133,8 @@
 		display: block;
 		width: 100%;
 		font-size: 1.2rem;
-		margin: 1rem 0;
+		margin: 0.5rem 0;
+		padding: 0.5rem 0;
 		text-align: center;
 	}
 
@@ -146,16 +148,17 @@
 	}
 
 	.navLinksMobile {
+		background-color: var(--whiteColor);
 		display: block;
 		text-align: center;
-		padding: 1.5rem;
+		padding: 1rem;
 		margin: auto;
-		border-radius: 4px;
-		width: 60%;
+		border-radius: 7px;
+		width: 30%;
 		background: var(--blackColor);
 		text-decoration: none;
 		color: var(--whiteColor);
-		font-size: 1.2rem;
+		font-size: 1rem;
 		font-weight: 700;
 		letter-spacing: 2px;
 	}
@@ -183,6 +186,6 @@
 		font-size: 1rem;
 	}
 	.toggleBtn p {
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 }

@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-	/* border: 1px solid red; */
+	/* 	border: 1px solid red; */
 }
 
 .App {
@@ -22,7 +22,7 @@ img {
 
 :root {
 	--blackColor: rgb(3, 3, 3);
-	--whiteColor: rgb(248, 248, 248);
+	--whiteColor: rgb(245, 245, 245);
 	--greyColor: rgb(71, 71, 71);
 	--lightGreyColor: rgb(230, 224, 224);
 	--textGreyColor: rgb(87, 87, 87);

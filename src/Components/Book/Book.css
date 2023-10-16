@@ -173,9 +173,60 @@
 }
 
 @media screen and (max-width: 600px) {
+	.bookContainer {
+		justify-content: flex-start;
+	}
+
+	.bookWrapper {
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+		width: 100%;
+		z-index: 99;
+		right: 0;
+	}
+
+	.bookItems {
+		width: 33%;
+		margin: 20px 10px;
+		justify-content: center;
+	}
+	.locationList {
+		left: 40%;
+		top: 10%;
+	}
+	.date {
+		left: 10%;
+		top: 60%;
+	}
+
 	.mapBox {
-		width: 95%;
+		padding: 0 10px;
+		width: 100%;
 		height: auto;
 		margin: 0 auto;
+	}
+	.options {
+		top: 70%;
+		left: 40%;
+		padding: 0;
+	}
+
+	.optionItem {
+		width: 120%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.optionCounterButton {
+		width: 20px;
+		height: 20px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+	.bookButton {
+		margin-top: 10px;
 	}
 }

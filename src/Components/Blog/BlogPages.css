@@ -32,3 +32,10 @@
 	color: var(--textGreyColor);
 	cursor: not-allowed;
 }
+
+@media screen and (max-width: 600px) {
+	.pagination button,
+	.pagination span {
+		padding: 5px 10px;
+	}
+}

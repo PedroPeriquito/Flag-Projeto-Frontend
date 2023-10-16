@@ -2,7 +2,7 @@
 	background-color: var(--whiteColor);
 	padding: 50px 0;
 	text-align: center;
-	height: calc(100vh - 86px);
+	height: calc(100vh - 5.5rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,6 +51,10 @@
 	border-radius: 5px;
 }
 
+.contactsInput textarea {
+	height: 120px;
+}
+
 .contactsInput.center {
 	text-align: center;
 }
@@ -85,4 +89,36 @@
 
 .formBtnsCancel:hover {
 	background-color: var(--secThemeColor);
+}
+
+@media screen and (max-width: 650px) {
+	.contacts {
+		padding: 20px 0;
+		height: calc(100vh - 40px);
+	}
+
+	.contactsWrapper {
+		width: 90%;
+		padding: 10px;
+	}
+
+	.contactsForm h3 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.contactsInput label {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+	.contactsInput input,
+	.contactsInput textarea {
+		font-size: 14px;
+	}
+
+	.formBtns,
+	.formBtnsCancel {
+		padding: 8px 16px;
+		margin: 0 8px;
+	}
 }
