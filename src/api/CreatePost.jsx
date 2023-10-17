@@ -18,13 +18,10 @@ const CreatePost = () => {
 	const handleSubmit = async e => {
 		e.preventDefault();
 		try {
-			// Making a POST request to create a new blog post
 			const response = await fetch('http://localhost:5000/updates', {
 				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({ title, body }), // Sending title and body in the request body
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ title, body }),
 			});
 
 			// Parsing the response data as JSON

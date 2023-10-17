@@ -60,12 +60,12 @@ const Home = () => {
 							<article className='blogPost' key={post.id}>
 								<h3>{post.title}</h3>
 								<p>{post.body}</p>
-								<p className='blogDate'>{new Date(post.date).toLocaleDateString('en-GB')}</p>
+								<p className='blogDate'>{post.date}</p>
 								<Link to={`/update/${post.id}`} className='blogLink update'>
-									<i class='fa-regular fa-pen-to-square'></i>Edit
+									<i className='fa-regular fa-pen-to-square'></i>Edit
 								</Link>
 								<Link to={`/delete/${post.id}`} className='blogLink delete'>
-									<i class='fa-solid fa-trash-can'></i>Delete
+									<i className='fa-solid fa-trash-can'></i>Delete
 								</Link>
 							</article>
 						))}

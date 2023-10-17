@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Hero = props => {
 	return (
 		<>
-			{/* Hero section with provided class name */}
+			{/* Hero section with provided className name */}
 			<section className={props.cName}>
 				{/* Hero image */}
 				<img src={props.heroImgSrc} alt={props.heroImgText} className='heroImg' />
