@@ -10,9 +10,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import { useContext } from 'react';
 import { ThemeContext } from './Components/ChangeMode/ChangeMode';
-import CreatePost from './api_NotUsed/CreatePost';
-import UpdatePost from './api_NotUsed/UpdatePost';
-import DeletePost from './api_NotUsed/DeletePost';
+
 
 export default function App() {
 	// Access theme and toggleTheme function from ThemeContext using useContext hook
