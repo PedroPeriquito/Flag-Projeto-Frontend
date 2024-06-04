@@ -1,112 +1,112 @@
 {
-	"updates": [
-		{
-			"id": 1,
-			"title": "Site Launched!",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "18/09/2023"
-		},
-		{
-			"id": 2,
-			"title": "Roadmap",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "18/09/2023"
-		},
-		{
-			"id": 3,
-			"title": "2 destinations added",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "21/09/2023"
-		},
-		{
-			"id": 4,
-			"title": "2 destinations more to come",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "22/09/2023"
-		},
-		{
-			"id": 5,
-			"title": "New destinations gessing away",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "22/09/2023"
-		},
-		{
-			"id": 6,
-			"title": "Interactive map",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "26/09/2023"
-		},
-		{
-			"id": 7,
-			"title": "Find out the new destinations now!",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "27/09/2023"
-		},
-		{
-			"id": 8,
-			"title": "You can contact us now!",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "27/09/2023"
-		},
-		{
-			"id": 9,
-			"title": "Improved booking",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "29/09/2023"
-		},
-		{
-			"id": 10,
-			"title": "Check our new themes",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "01/10/2023"
-		},
-		{
-			"id": 11,
-			"title": "Give us your feedback",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "02/10/2023"
-		},
-		{
-			"id": 12,
-			"title": "Future destinations",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "02/10/2023"
-		},
-		{
-			"id": 13,
-			"title": "Next destination coming soon",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "06/10/2023"
-		},
-		{
-			"id": 14,
-			"title": "Guess the next destination",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "09/10/2023"
-		},
-		{
-			"id": 15,
-			"title": "Next destination - Swamp",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "12/10/2023"
-		},
-		{
-			"id": 16,
-			"title": "Swamp destiantion - AMA",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"date": "13/10/2023"
-		},
-		{
-			"title": "Swamp will be added in the next days",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"id": 17,
-			"date": "16/10/2023"
-		},
-		{
-			"title": "Roadmap update",
-			"body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
-			"id": 18,
-			"date": "16/10/2023"
-		}
-	]
+  "updates": [
+    {
+      "id": 1,
+      "title": "Site Launched!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "18/09/2023"
+    },
+    {
+      "id": 2,
+      "title": "Roadmap",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "18/09/2023"
+    },
+    {
+      "id": 3,
+      "title": "2 destinations added",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "21/09/2023"
+    },
+    {
+      "id": 4,
+      "title": "2 destinations more to come",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "22/09/2023"
+    },
+    {
+      "id": 5,
+      "title": "New destinations gessing away",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "22/09/2023"
+    },
+    {
+      "id": 6,
+      "title": "Interactive map",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "26/09/2023"
+    },
+    {
+      "id": 7,
+      "title": "Find out the new destinations now!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "27/09/2023"
+    },
+    {
+      "id": 8,
+      "title": "You can contact us now!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "27/09/2023"
+    },
+    {
+      "id": 9,
+      "title": "Improved booking",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "29/09/2023"
+    },
+    {
+      "id": 10,
+      "title": "Check our new themes",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "01/10/2023"
+    },
+    {
+      "id": 11,
+      "title": "Give us your feedback",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "02/10/2023"
+    },
+    {
+      "id": 12,
+      "title": "Future destinations",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "02/10/2023"
+    },
+    {
+      "id": 13,
+      "title": "Next destination coming soon",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "06/10/2023"
+    },
+    {
+      "id": 14,
+      "title": "Guess the next destination",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "09/10/2023"
+    },
+    {
+      "id": 15,
+      "title": "Next destination - Swamp",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "12/10/2023"
+    },
+    {
+      "id": 16,
+      "title": "Swamp destiantion - AMA",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "date": "13/10/2023"
+    },
+    {
+      "title": "Swamp will be added in the next days",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "id": 17,
+      "date": "16/10/2023"
+    },
+    {
+      "title": "Roadmap update",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus quia rem doloremque veritatis possimus optio sit quas, commodi delectus vitae quo id recusandae ad fugiat illum facere totam aliquam?",
+      "id": 18,
+      "date": "16/10/2023"
+    }
+  ]
 }

@@ -4,7 +4,7 @@ import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
 
 import SwiperComponent from '../../Components/Swiper/Swiper';
-import Blog from '../../Components/Blog/Blog';
+import Blog from '../../Components/Blog_NotUsed/Blog';
 
 import HomeHero from '../../Assets/homeHero.jpg';
 
@@ -23,7 +23,7 @@ const Home = () => {
 			/>
 			<SwiperComponent />
 			<About />
-			<Blog />
+			
 		</>
 	);
 };

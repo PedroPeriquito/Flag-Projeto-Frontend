@@ -10,9 +10,9 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import { useContext } from 'react';
 import { ThemeContext } from './Components/ChangeMode/ChangeMode';
-import CreatePost from './api/CreatePost';
-import UpdatePost from './api/UpdatePost';
-import DeletePost from './api/DeletePost';
+import CreatePost from './api_NotUsed/CreatePost';
+import UpdatePost from './api_NotUsed/UpdatePost';
+import DeletePost from './api_NotUsed/DeletePost';
 
 export default function App() {
 	// Access theme and toggleTheme function from ThemeContext using useContext hook
@@ -27,9 +27,6 @@ export default function App() {
 				<Route path='/destinations' element={<Destinations />} />
 				<Route path='/booking' element={<Booking />} />
 				<Route path='/contactUs' element={<Contacts />} />
-				<Route path='/create' element={<CreatePost />} />
-				<Route path='/update/:id' element={<UpdatePost />} />
-				<Route path='/delete/:id' element={<DeletePost />} />
 				<Route path='/*' element={<NotFound />} />
 			</Routes>
 			<Footer />
