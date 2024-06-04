@@ -45,7 +45,6 @@ Para fazer o deploy desse projeto rode
 
 ```bash
   npm start
-  npm run server
 ```
 
 
