@@ -9,32 +9,32 @@ import MapsAPI from '../../Components/MapsAPI/MapsAPI';
 
 const Book = () => {
 	/******************* LOCATION **************** */
-	const [location, setLocation] = useState('Location'); // State variable for selected location
-	const [selectedItem, setSelectedItem] = useState(null); // State variable to track selected location index
-	const [isOpen, setIsOpen] = useState(false); // State variable for location dropdown visibility
+	const [location, setLocation] = useState('Location'); 
+	const [selectedItem, setSelectedItem] = useState(null); 
+	const [isOpen, setIsOpen] = useState(false); 
 
 	const handleItemClick = (item, itemIndex) => {
-		setLocation(item.title); // Set selected location
-		setSelectedItem(itemIndex); // Set selected location index
-		setIsOpen(false); // Close location dropdown
+		setLocation(item.title);
+		setSelectedItem(itemIndex); 
+		setIsOpen(false); 
 	};
 
 	/*********************  CALENDAR  ************************ */
-	const [openDate, setOpenDate] = useState(false); // State variable for calendar visibility
+	const [openDate, setOpenDate] = useState(false); 
 	const [date, setDate] = useState([
 		{
 			startDate: new Date(),
 			endDate: new Date(),
 			key: 'selection',
 		},
-	]); // State variable for selected date range
+	]);
 
 	/**************************  OPTIONS  ********************* */
-	const [openOptions, setOpenOptions] = useState(false); // State variable for options visibility
+	const [openOptions, setOpenOptions] = useState(false);
 	const [options, setOptions] = useState({
-		adult: 1, // Number of adults
-		children: 0, // Number of children
-		room: 1, // Number of rooms
+		adult: 1, 
+		children: 0, 
+		room: 1, 
 	});
 
 	const handleOption = (name, operation) => {
@@ -42,7 +42,7 @@ const Book = () => {
 		setOptions(prev => {
 			return {
 				...prev,
-				[name]: operation === 'i' ? options[name] + 1 : options[name] - 1, // Increment or decrement the selected option
+				[name]: operation === 'i' ? options[name] + 1 : options[name] - 1, 
 			};
 		});
 	};
@@ -132,7 +132,7 @@ const Book = () => {
 				<MapsAPI index={selectedItem} />
 			</div>
 
-			{/* Book Button */}
+			
 			<div className='bookButtonWrapper'>
 				<button className='bookButton'>Book</button>
 			</div>
